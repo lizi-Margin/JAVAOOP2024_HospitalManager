@@ -32,6 +32,7 @@ public class Client {
             return;
         }
 
+
         int quitService = 0;
         while(quitService !=1){
             if (runLogin()!=0 ){

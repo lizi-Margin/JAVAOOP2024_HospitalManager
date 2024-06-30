@@ -1,65 +1,61 @@
 package shc;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
-public class DatabaseManager implements DatabaseManagerIF {
-    // 数据库连接信息
-    private  String DB_URL ;
-    private  String USER ;
-    private  String PASS ;
+public class DatabaseManager  {
+    String url = "jdbc:mysql://localhost:3306/javadb";
+    String user = "root";
+    String password = "114514";
 
-    // 数据库连接对象
-    private Connection conn;
+    Connection connection = null;
+    Statement statement = null;
+    ResultSet resultSet = null;
 
     public DatabaseManager (){}
     public DatabaseManager(String userName , String password){
-        setUser(userName, password);
+        this.user = userName;
+        this.password = password;
     }
     public DatabaseManager(String userName , String password,String url){
-        setUser(userName, password);
-        setURL(url);
-    }   
+        this.user = userName ;
+        this.password = password;
+        this.url = url;
+    }
     // 构造函数：连接到数据库
     public int initConnection() {
-        if (USER == null || PASS == null || DB_URL==null) return -1;
+        if (user == null || password == null || url==null) return -1;
         int state  =  0;
         try {
-            // 注册 JDBC 驱动
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            // 打开连接
-            conn = DriverManager.getConnection(DB_URL, USER, PASS);
-        } catch (Exception e) {
-            state =  1; 
-            e.printStackTrace();
+            System.out.println("连接数据库...");
+            connection = DriverManager.getConnection(url, user, password);
+        }catch (SQLException se) {
+            se.printStackTrace();
+            connection = null;
+            state = 1;
+        }catch (ClassNotFoundException ce) {
+            ce.printStackTrace();
+            connection = null;
+            state = 2;
         }
         return state;
     }
 
 
 
-    public void setUser (String userName , String password){
-        this.USER = userName ;
-        this.PASS = password;
-    }
-    public void setURL(String url){
-        DB_URL = url;
-    }
 
     // 执行查询
     public ResultSet executeQuery(String sql) {
-            ResultSet rs = null;
-            try {
-                PreparedStatement stmt = conn.prepareStatement(sql);
-                rs = stmt.executeQuery();
-            }catch(SQLException e){
-                e.printStackTrace();
-                rs = null;
-            } 
-            return rs;
+        try {
+            System.out.println("创建语句...");
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(sql);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            resultSet = null;
+        }
+        return resultSet;
     }
     public ResultSet executeQuery(String sql,int retry) {
         ResultSet rs = null;
@@ -71,17 +67,19 @@ public class DatabaseManager implements DatabaseManagerIF {
 
     // 执行更新（增删改）
     public int executeUpdate(String sql)  {
-            int rowsAffected = -1;
-            try {
-                PreparedStatement stmt = conn.prepareStatement(sql);
-                rowsAffected = stmt.executeUpdate();
-            }catch(SQLException e){
-                e.printStackTrace();
-                rowsAffected = -1;
-            } 
-            return rowsAffected;
+        int rowsAffected = -1;
+        try {
+            statement = connection.prepareStatement(sql);
+            rowsAffected = statement.executeUpdate(sql);
 
+        } catch (Exception e) {
+            e.printStackTrace();
+            rowsAffected = -1;
+        }
+        return rowsAffected;
     }
+
+
     public int executeUpdate(String sql,int retry) {
         int rowsAffected = -1;
         for (int i = 0 ; i < retry && rowsAffected==-1 ; i+=1){
@@ -94,7 +92,7 @@ public class DatabaseManager implements DatabaseManagerIF {
     // 检测连接状态
     public boolean isConnected() {
         try {
-            return conn != null && !conn.isClosed();
+            return connection != null && !connection.isClosed();
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
@@ -104,13 +102,12 @@ public class DatabaseManager implements DatabaseManagerIF {
     // 关闭连接
     public void close() {
         try {
-            if (conn != null) {
-                conn.close();
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
+            if (resultSet != null) resultSet.close();
+            if (statement != null) statement.close();
+            if (connection != null) connection.close();
+        } catch (SQLException se) {
+            se.printStackTrace();
         }
     }
-
 
 }
