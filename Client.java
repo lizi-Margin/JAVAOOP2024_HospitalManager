@@ -1,5 +1,15 @@
 import shc.*;
 
+/*
+    shc 2024
+    readme:
+    1.需要连接服务端跟shc说，并且需要把DB_URL中的localhost换成shc的ip地址"10.29.166.88"
+    2.连接数据库的功能已经实现，在initDbManager()中。
+    3.访问数据库需要用到sql，请使用:
+        dbManager.executeQuery(sql);
+        dbManager.executeUpdate(sql);
+ */
+
 public class Client {
     private User user;
     private DatabaseManager  dbManager;
