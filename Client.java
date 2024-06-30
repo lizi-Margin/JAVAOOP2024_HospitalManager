@@ -3,7 +3,7 @@ import shc.*;
 public class Client {
     private User user;
     private DatabaseManager  dbManager;
-    private  static final String DB_URL = "jdbc:mysql://localhost:3306/mydatabase";
+    private  static final String DB_URL = "jdbc:mysql://localhost:3306/javadb";
     private  static final String USER = "username";
     private  static final String PASS = "password";
 
@@ -33,14 +33,14 @@ public class Client {
         }
 
 
-        int quitService = 0;
-        while(quitService !=1){
+        int serviceInd = 1;
+        while(serviceInd !=0){
             if (runLogin()!=0 ){
                 System.err.println("Exited while loging in.");
                 return;
             }
 
-            quitService = runService();
+            serviceInd = runService();
         }
     }
 
