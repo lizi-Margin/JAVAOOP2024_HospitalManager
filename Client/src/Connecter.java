@@ -13,7 +13,7 @@ public class Connecter {
 
 
     public static DatabaseManager dbManager;
-    private  static final String DB_URL = "jdbc:mysql://localhost:3306/javadb";
+    private  static final String DB_URL = "jdbc:mysql://10.29.166.88:3306/javadb";
     private  static final String USER = "username";
     private  static final String PASS = "password";
 

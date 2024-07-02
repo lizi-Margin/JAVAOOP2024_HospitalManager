@@ -41,11 +41,19 @@ public class DatabaseManager  {
     }
 
 
+    private void checkConnection()throws  SQLException{
+        if (this.isConnected())
+            return;
+        if (this.initConnection() == 0)
+            return;
+        throw new SQLException("checkConnection failed.");
+    }
 
 
     // 执行查询
     public ResultSet executeQuery(String sql) {
         try {
+            this.checkConnection();
             System.out.println("创建语句...");
             PreparedStatement statement = connection.prepareStatement(sql);
             resultSet = statement.executeQuery();
@@ -68,7 +76,7 @@ public class DatabaseManager  {
     public int executeUpdate(String sql)  {
         int rowsAffected = -1;
         try {
-
+            this.checkConnection();
             PreparedStatement statement = connection.prepareStatement(sql);
             rowsAffected = statement.executeUpdate();
 

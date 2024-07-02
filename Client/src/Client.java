@@ -32,9 +32,34 @@ public class Client {
     private static  final Lock lock = new ReentrantLock();
     private  static  final Condition condition = lock.newCondition();
 
-    private User user;
+    public static final int  nullUserId = -1 ;
+    public static final String  nullUserType = "" ;
+    public static int  userId =nullUserId;
+    public static String  userType =nullUserType;
+    public static void setUser(int id,String Type){
+        if (id>=0 && (!Type.isEmpty())){
+            userId = id;
+            userType = Type;
+        }
+        System.out.print(userId);
+        System.out.print("  ");
+        System.out.println(userType);
+    }
+    public static void releaseUser(){
+        userId = nullUserId;
+        userType = nullUserType;
+    }
+    public static boolean hasUser(){
+        if (userId == nullUserId || userType.equals( nullUserType) )
+            return  false;
+        if (userId >= 0 && (!userType.isEmpty()))
+            return  true;
+        return  false;
+    }
+
+
     public static DatabaseManager  dbManager;
-    private  static final String DB_URL = "jdbc:mysql://localhost:3306/javadb";
+    private  static final String DB_URL = "jdbc:mysql://10.29.166.88:3306/javadb";
     private  static final String USER = "username";
     private  static final String PASS = "password";
 

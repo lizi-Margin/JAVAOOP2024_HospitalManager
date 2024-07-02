@@ -1,6 +1,5 @@
 package src.Models;
 
-import javax.security.auth.spi.LoginModule;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -8,10 +7,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 
 import src.Client;
-import src.DatabaseManager.Patient;
 
 public class Login extends JFrame {
     static final int LoginFailure = 0;
@@ -27,12 +24,14 @@ public class Login extends JFrame {
 
     public Login() {
         setTitle("Login");
-        setSize(300, 150);
+        setSize(400, 250);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(5, 1));
+        JPanel mainPanel = new JPanel(new GridBagLayout());
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(5, 5, 5, 5);
+        gbc.fill = GridBagConstraints.HORIZONTAL;
 
         usernameField = new JTextField();
         passwordField = new JPasswordField();
@@ -40,24 +39,45 @@ public class Login extends JFrame {
         registerButton = new JButton("Register");
         statusLabel = new JLabel("", SwingConstants.CENTER);
 
-        panel.add(new JLabel("Username:"));
-        panel.add(usernameField);
-        panel.add(new JLabel("Password:"));
-        panel.add(passwordField);
-        panel.add(loginButton);
-        panel.add(registerButton);
-        panel.add(statusLabel);
+        // Customize components
+        usernameField.setPreferredSize(new Dimension(200, 30));
+        passwordField.setPreferredSize(new Dimension(200, 30));
+        loginButton.setPreferredSize(new Dimension(100, 30));
+        registerButton.setPreferredSize(new Dimension(100, 30));
+        statusLabel.setForeground(Color.RED);
 
-        add(panel);
+        // Add components to the panel
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        mainPanel.add(new JLabel("Username:"), gbc);
+        gbc.gridx = 1;
+        mainPanel.add(usernameField, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        mainPanel.add(new JLabel("Password:"), gbc);
+        gbc.gridx = 1;
+        mainPanel.add(passwordField, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 2;
+        mainPanel.add(loginButton, gbc);
+        gbc.gridx = 1;
+        mainPanel.add(registerButton, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 3;
+        gbc.gridwidth = 2;
+        mainPanel.add(statusLabel, gbc);
+
+        add(mainPanel);
 
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
                     int loginResult = checkUserName(usernameField.getText(), new String(passwordField.getPassword()));
-                    handleLoginResult(loginResult);
-                    setVisible(false);
-                    dispose();
+
                 } catch (Exception ex) {
                     ex.printStackTrace();
                     statusLabel.setText("Login failed due to an error.");
@@ -79,6 +99,7 @@ public class Login extends JFrame {
 
     private int checkUserName(String userName, String password) throws Exception {
         if (!Client.dbManager.isConnected()) {
+            this.handleLoginResult(LoginFailure,Client.nullUserId);
             return LoginFailure;
         }
 
@@ -97,40 +118,50 @@ public class Login extends JFrame {
                 PasswordDialog passwordDialog = new PasswordDialog(this);
                 passwordDialog.setVisible(true);
                 String newPass = passwordDialog.getPassword();
+                if(newPass.isEmpty()) {
+                    this.handleLoginResult(LoginFailure, Client.nullUserId);
+                    return LoginFailure;
+                }
                 adminSql = String.format("UPDATE admin SET a_state = %b  , a_password = '%s'  WHERE a_id = %d",true,newPass,rs.getInt("a_id"));
                 System.out.println(adminSql);
                 Client.dbManager.executeUpdate(adminSql);
             }
+            this.handleLoginResult(AdminAccount,rs.getInt("a_id"));
             return AdminAccount;
         }
 
         // Doctor check
         rs = Client.dbManager.executeQuery(doctorSql);
         if (rs.next()) {
+            this.handleLoginResult(DoctorAccount,rs.getInt("d_id"));
             return DoctorAccount;
         }
 
         // Patient check
         rs = Client.dbManager.executeQuery(patientSql);
         if (rs.next()) {
+            this.handleLoginResult(PatientAccount,rs.getInt("p_id"));
             return PatientAccount;
         }
 
         return LoginFailure;
     }
 
-    private void handleLoginResult(int loginResult) {
+    private void handleLoginResult(int loginResult,int id) {
         switch (loginResult) {
             case AdminAccount:
                 statusLabel.setText("Admin logged in.");
+                Client.setUser(id,"Admin");
                 switchToAdminModule();
                 break;
             case DoctorAccount:
                 statusLabel.setText("Doctor logged in.");
+                Client.setUser(id,"Doctor");
                 switchToDoctorModule();
                 break;
             case PatientAccount:
                 statusLabel.setText("Patient logged in.");
+                Client.setUser(id,"Patient");
                 switchToPatientModule();
                 break;
             default:
@@ -144,22 +175,32 @@ public class Login extends JFrame {
         JOptionPane.showMessageDialog(this, "Switching to Admin Module");
         Client.switchTo(Client.AdminModel);
 
+        setVisible(false);
+        dispose();
     }
 
     private void switchToDoctorModule() {
         // Placeholder for switching to doctor module
         JOptionPane.showMessageDialog(this, "Switching to Doctor Module");
         Client.switchTo(Client.DoctorModel);
+
+        setVisible(false);
+        dispose();
     }
 
     private void switchToPatientModule() {
         // Placeholder for switching to patient module
         JOptionPane.showMessageDialog(this, "Switching to Patient Module");
         Client.switchTo(Client.PatientModel);
+
+        setVisible(false);
+        dispose();
     }
 
     private void switchToRegisterModule() {
         Client.switchTo(Client.RegisterModel);
+        setVisible(false);
+        dispose();
     }
 
     public class PasswordDialog extends JDialog {
@@ -182,6 +223,14 @@ public class Login extends JFrame {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     password = new String(passwordField.getPassword());
+                    dispose();
+                }
+            });
+
+            addWindowListener(new WindowAdapter() {
+                public void windowClosing(WindowEvent windowEvent) {
+                    password = "";
+                    setVisible(false);
                     dispose();
                 }
             });

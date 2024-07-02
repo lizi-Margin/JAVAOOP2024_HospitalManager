@@ -1,8 +1,6 @@
 package src.Models;
 
 
-import javax.security.auth.spi.LoginModule;
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,7 +10,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import src.Client;
-import src.DatabaseManager.Patient;
 
 public class Register extends Frame {
     private TextField idField;
