@@ -2,8 +2,10 @@ package  src;
 import src.DatabaseManager.*;
 import src.Models.Login;
 import  src.Models.Register;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
-import javax.swing.*;
 
 /*
     shc 2024
@@ -25,8 +27,10 @@ public class Client {
     public static final int PatientModel = 3;
     public static final int RegisterModel = 4;
 
-    public static int setCurrentModle = NULL;
+    public static volatile int setCurrentModle = NULL;
     private static int currentModle = NULL;
+    private static  final Lock lock = new ReentrantLock();
+    private  static  final Condition condition = lock.newCondition();
 
     private User user;
     public static DatabaseManager  dbManager;
@@ -35,11 +39,8 @@ public class Client {
     private  static final String PASS = "password";
 
 
-    Client(){
-        run();
-    }
 
-    private int initDbManager(){
+    private static  int initDbManager(){
         int state = 0;
         dbManager = new DatabaseManager(USER,PASS,DB_URL);
         int connFailedCounter = 0;
@@ -53,50 +54,77 @@ public class Client {
         return state;
     }
 
-    public void run(){
+    public static void run(){
         if (initDbManager() != 0 ){
             System.err.println("Client failed to stat.");
             return;
         }
 
         setCurrentModle = LoginModel;
+        runService();
         while(currentModle !=NULL || setCurrentModle != NULL){
-            runService();
+            System.out.print(setCurrentModle);
+            System.out.print("  ");
+            System.out.println(currentModle);
+            lock.lock();
+            try{
+                condition.await();
+                runService();
+            }catch (InterruptedException e) {
+                e.printStackTrace();
+            }finally{
+                lock.unlock();
+            }
         }
     }
 
 
-    private void runService(){
+    private static void runService(){
+        lock.lock();
 
-        if (setCurrentModle == EXIt){
-            System.exit(0);
-            return;}
-        if (setCurrentModle == currentModle || setCurrentModle == NULL)
-            return;
+            if (setCurrentModle == EXIt)
+                System.exit(0);
+            if (setCurrentModle == currentModle || setCurrentModle == NULL)
+                return;
 
-        System.out.print(setCurrentModle);
-        System.out.print("  ");
-        System.out.println(currentModle);
+            System.out.print(setCurrentModle);
+            System.out.print("  ");
+            System.out.println(currentModle);
 
-        if (setCurrentModle==LoginModel){
-            currentModle = LoginModel ;
-            new Login().setVisible(true);
-        }
-        if (setCurrentModle== RegisterModel){
-            currentModle = RegisterModel ;
-            new Register().setVisible(true);
-        }
-        if (setCurrentModle==AdminModel){
-            currentModle = AdminModel ;
-        }
-        if (setCurrentModle==DoctorModel){
-            currentModle = DoctorModel ;
-        }
-        if (setCurrentModle==PatientModel){
-            currentModle = PatientModel ;
+            if (setCurrentModle == LoginModel) {
+                currentModle = LoginModel;
+                new Login().setVisible(true);
+            }
+            if (setCurrentModle == RegisterModel) {
+                currentModle = RegisterModel;
+                new Register().setVisible(true);
+            }
+            if (setCurrentModle == AdminModel) {
+                currentModle = AdminModel;
+            }
+            if (setCurrentModle == DoctorModel) {
+                currentModle = DoctorModel;
+            }
+            if (setCurrentModle == PatientModel) {
+                currentModle = PatientModel;
+            }
+
+            setCurrentModle = NULL;
+
+
+    }
+
+    public static void switchTo(int Model){
+        lock.lock();
+        try {
+            setCurrentModle = Model;
+            condition.signalAll();
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            lock.unlock();
         }
 
-        setCurrentModle = NULL;
     }
 
 //    private int runLogin(){

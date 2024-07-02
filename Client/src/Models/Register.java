@@ -24,7 +24,7 @@ public class Register extends Frame {
     private TextField passwordField;
     private Choice userTypeChoice;
 
-    public Register() {
+    public  Register() {
         setTitle("Register");
         setSize(400, 300);
         setLayout(new GridLayout(9, 2));
@@ -74,6 +74,12 @@ public class Register extends Frame {
 
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent windowEvent) {
+                this.switchToLoginModule();
+                setVisible(false);
+                dispose();
+            }
+            private void switchToLoginModule(){
+                Client.switchTo(Client.LoginModel);
                 setVisible(false);
                 dispose();
             }
@@ -157,7 +163,7 @@ public class Register extends Frame {
             switchToLoginModule();
         }
         private void switchToLoginModule(){
-            Client.setCurrentModle = Client.LoginModel;
+            Client.switchTo(Client.LoginModel);
             setVisible(false);
             dispose();
         }

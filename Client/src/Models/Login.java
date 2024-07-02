@@ -19,11 +19,11 @@ public class Login extends JFrame {
     static final int DoctorAccount = 2;
     static final int PatientAccount = 3;
 
-    private JTextField usernameField;
-    private JPasswordField passwordField;
-    private JButton loginButton;
-    private JButton registerButton;
-    private JLabel statusLabel;
+    private final JTextField usernameField;
+    private final JPasswordField passwordField;
+    private final JButton loginButton;
+    private final JButton registerButton;
+    private final JLabel statusLabel;
 
     public Login() {
         setTitle("Login");
@@ -132,24 +132,24 @@ public class Login extends JFrame {
     private void switchToAdminModule() {
         // Placeholder for switching to admin module
         JOptionPane.showMessageDialog(this, "Switching to Admin Module");
-        Client.setCurrentModle = Client.AdminModel;
+        Client.switchTo(Client.AdminModel);
 
     }
 
     private void switchToDoctorModule() {
         // Placeholder for switching to doctor module
         JOptionPane.showMessageDialog(this, "Switching to Doctor Module");
-        Client.setCurrentModle = Client.DoctorModel;
+        Client.switchTo(Client.DoctorModel);
     }
 
     private void switchToPatientModule() {
         // Placeholder for switching to patient module
         JOptionPane.showMessageDialog(this, "Switching to Patient Module");
-        Client.setCurrentModle = Client.PatientModel;
+        Client.switchTo(Client.PatientModel);
     }
 
     private void switchToRegisterModule() {
-        Client.setCurrentModle = Client.RegisterModel;
+        Client.switchTo(Client.RegisterModel);
     }
 
 }

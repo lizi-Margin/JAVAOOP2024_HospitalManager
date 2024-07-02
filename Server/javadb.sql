@@ -1,3 +1,11 @@
+
+DROP TABLE IF EXISTS `arrange`;
+DROP TABLE IF EXISTS `information`;
+DROP TABLE IF EXISTS `orders`;
+DROP TABLE IF EXISTS `record`;
+
+
+
 -- admin
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE admin (
@@ -37,7 +45,7 @@ INSERT INTO patient (p_id, p_password, p_name, p_gender, p_card, p_phone, p_addr
 (5, 'pass5', 'Patient5', 'Male', '2345678905', '234-567-8905', '238 Patient Road', 50, 'Heart Disease');
 
 -- doctor
-DROP TABLE IF EXISTS `doctors`;
+DROP TABLE IF EXISTS `doctor`;
 CREATE TABLE doctor (
     d_id INT PRIMARY KEY,
     d_password VARCHAR(50) NOT NULL,
@@ -60,3 +68,95 @@ INSERT INTO doctor (d_id, d_password, d_name, d_gender, d_card, d_phone, d_addre
 (3, 'docpass3', 'Doctor3', 'Male', '3456789014', '345-678-9014', '347 Doctor Lane', 'Resident', 'Expert in pediatrics', 'Pediatrics', 'Active', 100.00, 'Children Hospital'),
 (4, 'docpass4', 'Doctor4', 'Female', '3456789015', '345-678-9015', '348 Doctor Lane', 'Senior', 'Renowned neurologist', 'Neurology', 'Active', 200.00, 'Neuro Hospital'),
 (5, 'docpass5', 'Doctor5', 'Male', '3456789016', '345-678-9016', '349 Doctor Lane', 'Consultant', 'Leading oncologist', 'Oncology', 'Active', 250.00, 'Cancer Center');
+
+
+
+-- orders (挂号订单)
+DROP TABLE IF EXISTS `orders`;
+CREATE TABLE orders (
+    o_id INT PRIMARY KEY AUTO_INCREMENT,
+    p_id INT,
+    d_id INT,
+    o_history TEXT NOT NULL,
+    o_start DATETIME NOT NULL,
+    o_end DATETIME NOT NULL,
+    o_state VARCHAR(50),
+    o_total_price INT NOT NULL,
+    o_price_state VARCHAR(50),
+    FOREIGN KEY (p_id) REFERENCES patient(p_id),
+    FOREIGN KEY (d_id) REFERENCES doctor(d_id)
+);
+INSERT INTO orders (o_id,p_id, d_id, o_history, o_start, o_end, o_state, o_total_price, o_price_state) VALUES
+(1,1, 1, 'History1', '2023-06-01 09:00:00', '2023-06-01 09:30:00', 'Completed', 200.00, 'Paid'),
+(2,2, 2, 'History2', '2023-06-02 10:00:00', '2023-06-02 10:30:00', 'Pending', 150.00, 'Unpaid'),
+(3,3, 3, 'History3', '2023-06-03 11:00:00', '2023-06-03 11:30:00', 'Completed', 180.00, 'Paid'),
+(4,4, 4, 'History4', '2023-06-04 12:00:00', '2023-06-04 12:30:00', 'Canceled', 200.00, 'Unpaid'),
+(5,5, 5, 'History5', '2023-06-05 13:00:00', '2023-06-05 13:30:00', 'Completed', 220.00, 'Paid');
+
+
+
+
+
+
+
+
+-- information (门诊信息)
+DROP TABLE IF EXISTS `information`;
+CREATE TABLE information (
+    info_id INT PRIMARY KEY AUTO_INCREMENT,
+    info_date DATE NOT NULL,
+    info_price INT NOT NULL,
+    d_id INT,
+    info_cycle BOOLEAN NOT NULL,
+    info_state VARCHAR(50),
+    FOREIGN KEY (d_id) REFERENCES doctor(d_id)
+);
+INSERT INTO information (info_id,info_date, info_price, d_id, info_cycle, info_state) VALUES
+(1,'2023-06-01', 50.00, 1, FALSE, 'Approved'),
+(2,'2023-06-02', 60.00, 2, TRUE, 'Pending'),
+(3,'2023-06-03', 55.00, 3, FALSE, 'Approved'),
+(4,'2023-06-04', 70.00, 4, TRUE, 'Rejected'),
+(5,'2023-06-05', 65.00, 5, FALSE, 'Approved');
+
+
+-- arrange (出诊安排)
+DROP TABLE IF EXISTS `arrange`;
+CREATE TABLE arrange (
+    ar_id INT PRIMARY KEY AUTO_INCREMENT,
+    ar_time DATETIME NOT NULL,
+    d_id INT,
+    p_id INT,
+    info_id INT,
+    FOREIGN KEY (d_id) REFERENCES doctor(d_id),
+    FOREIGN KEY (p_id) REFERENCES patient(p_id),
+    FOREIGN KEY (info_id) REFERENCES information(info_id)
+);
+INSERT INTO arrange (ar_time, d_id, p_id, info_id) VALUES
+('2023-06-01 09:00:00', 1, 1, 1),
+('2023-06-02 10:00:00', 2, 2, 2),
+('2023-06-03 11:00:00', 3, 3, 3),
+('2023-06-04 12:00:00', 4, 4, 4),
+('2023-06-05 13:00:00', 5, 5, 5);
+
+
+
+-- record (操作记录)
+DROP TABLE IF EXISTS `record`;
+CREATE TABLE record (
+    record_id INT PRIMARY KEY AUTO_INCREMENT,
+    record_time DATETIME NOT NULL,
+    record_object INT NOT NULL,
+    record_type INT NOT NULL
+);
+
+
+
+
+
+SHOW TABLES;
+SELECT * FROM admin;
+SELECT * FROM patient;
+SELECT * FROM doctor;
+SELECT * FROM orders;
+SELECT * FROM arrange;
+SELECT * FROM information;
