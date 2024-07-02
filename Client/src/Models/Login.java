@@ -1,5 +1,6 @@
 package src.Models;
 
+import javax.security.auth.spi.LoginModule;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -7,7 +8,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import src.Client;
+import src.DatabaseManager.Patient;
 
 public class Login extends JFrame {
     static final int LoginFailure = 0;
@@ -52,6 +56,7 @@ public class Login extends JFrame {
                 try {
                     int loginResult = checkUserName(usernameField.getText(), new String(passwordField.getPassword()));
                     handleLoginResult(loginResult);
+                    setVisible(false);
                     dispose();
                 } catch (Exception ex) {
                     ex.printStackTrace();
@@ -63,8 +68,9 @@ public class Login extends JFrame {
         registerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                RegisterFrame registerFrame = new RegisterFrame();
-                registerFrame.setVisible(true);
+                switchToRegisterModule();
+                setVisible(false);
+                dispose();
             }
         });
     }
@@ -142,91 +148,11 @@ public class Login extends JFrame {
         Client.setCurrentModle = Client.PatientModel;
     }
 
+    private void switchToRegisterModule() {
+        Client.setCurrentModle = Client.RegisterModel;
+    }
 
 }
 
 
-class RegisterFrame extends Frame {
-    private TextField idField;
-    private TextField nameField;
-    private TextField ageField;
-    private TextField genderField;
-    private TextField addressField;
-    private TextField contactField;
-    private Choice userTypeChoice;
-
-    public RegisterFrame() {
-        setTitle("注册");
-        setSize(400, 300);
-        setLayout(new GridLayout(8, 2));
-
-        Label userTypeLabel = new Label("用户类型:");
-        userTypeChoice = new Choice();
-        userTypeChoice.add("患者");
-        userTypeChoice.add("医生");
-        userTypeChoice.add("管理员");
-
-        Label idLabel = new Label("身份证号:");
-        idField = new TextField();
-        Label nameLabel = new Label("姓名:");
-        nameField = new TextField();
-        Label ageLabel = new Label("年龄:");
-        ageField = new TextField();
-        Label genderLabel = new Label("性别:");
-        genderField = new TextField();
-        Label addressLabel = new Label("住址:");
-        addressField = new TextField();
-        Label contactLabel = new Label("联系方式:");
-        contactField = new TextField();
-
-        Button registerButton = new Button("注册");
-        registerButton.addActionListener(new RegisterButtonListener());
-
-        add(userTypeLabel);
-        add(userTypeChoice);
-        add(idLabel);
-        add(idField);
-        add(nameLabel);
-        add(nameField);
-        add(ageLabel);
-        add(ageField);
-        add(genderLabel);
-        add(genderField);
-        add(addressLabel);
-        add(addressField);
-        add(contactLabel);
-        add(contactField);
-        add(new Label());
-        add(registerButton);
-
-        addWindowListener(new WindowAdapter() {
-            public void windowClosing(WindowEvent windowEvent) {
-                setVisible(false);
-                dispose();
-            }
-        });
-    }
-
-    private class RegisterButtonListener implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
-            // 注册逻辑
-            String userType = userTypeChoice.getSelectedItem();
-            String id = idField.getText();
-            String name = nameField.getText();
-            String age = ageField.getText();
-            String gender = genderField.getText();
-            String address = addressField.getText();
-            String contact = contactField.getText();
-
-            // 这里可以添加更多注册逻辑，比如将用户信息保存到数据库
-            System.out.println("用户类型: " + userType);
-            System.out.println("身份证号: " + id);
-            System.out.println("姓名: " + name);
-            System.out.println("年龄: " + age);
-            System.out.println("性别: " + gender);
-            System.out.println("住址: " + address);
-            System.out.println("联系方式: " + contact);
-        }
-    }
-}
 

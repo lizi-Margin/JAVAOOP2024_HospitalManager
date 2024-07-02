@@ -27,7 +27,7 @@ CREATE TABLE patient (
     p_phone VARCHAR(20) NOT NULL,
     p_address VARCHAR(200) NOT NULL,
     p_age INT NOT NULL,
-    p_history TEXT NOT NULL
+    p_history TEXT NOT NULL 
 );
 INSERT INTO patient (p_id, p_password, p_name, p_gender, p_card, p_phone, p_address, p_age, p_history) VALUES
 (1, 'pass1', 'Patient1', 'Male', '2345678901', '234-567-8901', '234 Patient Road', 30, 'None'),
@@ -46,6 +46,7 @@ CREATE TABLE doctor (
     d_card VARCHAR(20) NOT NULL,
     d_phone VARCHAR(20) NOT NULL,
     d_address VARCHAR(200) NOT NULL,
+
     d_post VARCHAR(50) NOT NULL,
     d_introduction TEXT NOT NULL,
     d_section VARCHAR(100) NOT NULL,

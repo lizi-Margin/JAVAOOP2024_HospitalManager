@@ -1,6 +1,7 @@
 package  src;
 import src.DatabaseManager.*;
 import src.Models.Login;
+import  src.Models.Register;
 
 import javax.swing.*;
 
@@ -22,6 +23,7 @@ public class Client {
     public static final int AdminModel = 1;
     public static final int DoctorModel = 2;
     public static final int PatientModel = 3;
+    public static final int RegisterModel = 4;
 
     public static int setCurrentModle = NULL;
     private static int currentModle = NULL;
@@ -57,30 +59,15 @@ public class Client {
             return;
         }
 
-
-
         setCurrentModle = LoginModel;
         while(currentModle !=NULL || setCurrentModle != NULL){
-            System.out.print(setCurrentModle);
-            System.out.print("  ");
-            System.out.println(currentModle);
             runService();
         }
     }
 
-    private int runLogin(){
-
-//        SwingUtilities.invokeLater(new Runnable() {
-//            @Override
-//            public void run() {
-//                new Login().setVisible(true);
-//            }
-//        });
-        new Login().setVisible(true);
-        return 0;
-    }
 
     private void runService(){
+
         if (setCurrentModle == EXIt){
             System.exit(0);
             return;}
@@ -93,9 +80,12 @@ public class Client {
 
         if (setCurrentModle==LoginModel){
             currentModle = LoginModel ;
-            this.runLogin();
+            new Login().setVisible(true);
         }
-
+        if (setCurrentModle== RegisterModel){
+            currentModle = RegisterModel ;
+            new Register().setVisible(true);
+        }
         if (setCurrentModle==AdminModel){
             currentModle = AdminModel ;
         }
@@ -109,5 +99,17 @@ public class Client {
         setCurrentModle = NULL;
     }
 
+//    private int runLogin(){
+//
+////        SwingUtilities.invokeLater(new Runnable() {
+////            @Override
+////            public void run() {
+////                new Login().setVisible(true);
+////            }
+////        });
+//
+//        return 0;
+//    }
+//
 }
 
