@@ -1,4 +1,4 @@
-package shc;
+package src.DatabaseManager;
 import java.sql.*;
 
 public class DatabaseManager  {
@@ -7,7 +7,6 @@ public class DatabaseManager  {
     String password = "114514";
 
     Connection connection = null;
-    Statement statement = null;
     ResultSet resultSet = null;
 
     public DatabaseManager (){}
@@ -48,8 +47,8 @@ public class DatabaseManager  {
     public ResultSet executeQuery(String sql) {
         try {
             System.out.println("创建语句...");
-            statement = connection.createStatement();
-            resultSet = statement.executeQuery(sql);
+            PreparedStatement statement = connection.prepareStatement(sql);
+            resultSet = statement.executeQuery();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -69,8 +68,9 @@ public class DatabaseManager  {
     public int executeUpdate(String sql)  {
         int rowsAffected = -1;
         try {
-            statement = connection.prepareStatement(sql);
-            rowsAffected = statement.executeUpdate(sql);
+
+            PreparedStatement statement = connection.prepareStatement(sql);
+            rowsAffected = statement.executeUpdate();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -103,7 +103,6 @@ public class DatabaseManager  {
     public void close() {
         try {
             if (resultSet != null) resultSet.close();
-            if (statement != null) statement.close();
             if (connection != null) connection.close();
         } catch (SQLException se) {
             se.printStackTrace();

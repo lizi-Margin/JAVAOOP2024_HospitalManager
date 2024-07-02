@@ -1,4 +1,4 @@
-package shc;
+package src.DatabaseManager;
 public class User {
     private int id;
 

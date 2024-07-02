@@ -1,4 +1,5 @@
-package shc;
+package src.DatabaseManager;
+
 public class Doctor  extends User{
     public Doctor(){
         super();
