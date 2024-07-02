@@ -83,7 +83,7 @@ public class Login extends JFrame {
         }
 
         // Example SQL queries for different user types
-        String adminSql = String.format("SELECT a_id FROM admin WHERE a_name = '%s' AND a_password = '%s'",userName,password);
+        String adminSql = String.format("SELECT * FROM admin WHERE a_name = '%s' AND a_password = '%s'",userName,password);
         String doctorSql = String.format("SELECT d_id FROM doctor WHERE d_name = '%s' AND d_password = '%s'",userName,password);
         String patientSql = String.format("SELECT p_id FROM patient WHERE p_name = '%s' AND p_password = '%s'",userName,password);
         System.out.println(adminSql);
@@ -91,6 +91,16 @@ public class Login extends JFrame {
         // Admin check
         ResultSet rs = Client.dbManager.executeQuery(adminSql);
         if (rs.next()) {
+            System.out.println(  rs.getBoolean("a_state" ));
+            if (!  rs.getBoolean("a_state" )){
+                System.out.println("reset admin password");
+                PasswordDialog passwordDialog = new PasswordDialog(this);
+                passwordDialog.setVisible(true);
+                String newPass = passwordDialog.getPassword();
+                adminSql = String.format("UPDATE admin SET a_state = %b  , a_password = '%s'  WHERE a_id = %d",true,newPass,rs.getInt("a_id"));
+                System.out.println(adminSql);
+                Client.dbManager.executeUpdate(adminSql);
+            }
             return AdminAccount;
         }
 
@@ -152,6 +162,38 @@ public class Login extends JFrame {
         Client.switchTo(Client.RegisterModel);
     }
 
+    public class PasswordDialog extends JDialog {
+        private JPasswordField passwordField;
+        private String password;
+
+        public PasswordDialog(Frame parent) {
+            super(parent, "Password Reset", true);
+            setSize(300, 150);
+            setLayout(new BorderLayout());
+            setLocationRelativeTo(parent);
+
+            passwordField = new JPasswordField(20);
+            JPanel panel = new JPanel();
+            panel.add(new JLabel("Reset Password:"));
+            panel.add(passwordField);
+
+            JButton btnSubmit = new JButton("Submit");
+            btnSubmit.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    password = new String(passwordField.getPassword());
+                    dispose();
+                }
+            });
+
+            add(panel, BorderLayout.CENTER);
+            add(btnSubmit, BorderLayout.SOUTH);
+        }
+
+        public String getPassword() {
+            return password;
+        }
+    }
 }
 
 
