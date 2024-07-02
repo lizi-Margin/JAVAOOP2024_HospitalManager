@@ -21,6 +21,7 @@ public class Login extends JFrame {
     private final JButton loginButton;
     private final JButton registerButton;
     private final JLabel statusLabel;
+    private final Choice userTypeChoice;
 
     public Login() {
         setTitle("Login");
@@ -39,11 +40,19 @@ public class Login extends JFrame {
         registerButton = new JButton("Register");
         statusLabel = new JLabel("", SwingConstants.CENTER);
 
+        Label userTypeLabel = new Label("User Type:");
+        userTypeChoice = new Choice();
+        userTypeChoice.add("Patient");
+        userTypeChoice.add("Doctor");
+        userTypeChoice.add("Admin");
+
         // Customize components
         usernameField.setPreferredSize(new Dimension(200, 30));
         passwordField.setPreferredSize(new Dimension(200, 30));
         loginButton.setPreferredSize(new Dimension(100, 30));
         registerButton.setPreferredSize(new Dimension(100, 30));
+        userTypeLabel.setPreferredSize(new Dimension(100, 30));
+        userTypeChoice.setPreferredSize(new Dimension(100, 30));
         statusLabel.setForeground(Color.RED);
 
         // Add components to the panel
@@ -65,8 +74,16 @@ public class Login extends JFrame {
         gbc.gridx = 1;
         mainPanel.add(registerButton, gbc);
 
+
+
         gbc.gridx = 0;
         gbc.gridy = 3;
+        mainPanel.add(userTypeLabel,gbc);
+        gbc.gridx = 1;
+        mainPanel.add(userTypeChoice,gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 4;
         gbc.gridwidth = 2;
         mainPanel.add(statusLabel, gbc);
 

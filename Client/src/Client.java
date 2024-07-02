@@ -1,10 +1,13 @@
 package  src;
 import src.DatabaseManager.*;
+import src.Models.Admin.Pages.AdminMainPage;
 import src.Models.Login;
 import  src.Models.Register;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+import src.Models.Patient.AppointmentSystem;
+import src.Models.Admin.Admin;
 
 
 /*
@@ -126,12 +129,15 @@ public class Client {
             }
             if (setCurrentModle == AdminModel) {
                 currentModle = AdminModel;
+                AdminMainPage adminMainPage = new AdminMainPage();
+                adminMainPage.setVisible(true);
             }
             if (setCurrentModle == DoctorModel) {
                 currentModle = DoctorModel;
             }
             if (setCurrentModle == PatientModel) {
                 currentModle = PatientModel;
+                new AppointmentSystem();
             }
 
             setCurrentModle = NULL;
