@@ -32,6 +32,7 @@ public class ModifyPage extends Frame implements ActionListener {
         setTitle("Modify Operation");
         setSize(400, 200);
         setVisible(true);
+        setLocationRelativeTo(null);
     }
 
     public void actionPerformed(ActionEvent e) {

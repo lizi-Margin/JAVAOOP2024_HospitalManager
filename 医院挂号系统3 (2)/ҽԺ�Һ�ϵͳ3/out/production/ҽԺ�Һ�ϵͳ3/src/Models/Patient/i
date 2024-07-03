@@ -1,0 +1,229 @@
+import java.awt.*;
+import java.awt.event.*;
+import java.sql.*;
+import javax.swing.*;
+
+public class AppointmentSystem extends Frame implements ActionListener {
+    // GUI components
+    private TextField usernameField, passwordField;
+    private Button loginButton, registerButton;
+
+    public AppointmentSystem() {
+        setLayout(new FlowLayout());
+
+        add(new Label("Username:"));
+        usernameField = new TextField(20);
+        add(usernameField);
+
+        add(new Label("Password:"));
+        passwordField = new TextField(20);
+        passwordField.setEchoChar('*');
+        add(passwordField);
+
+        loginButton = new Button("Login");
+        loginButton.addActionListener(this);
+        add(loginButton);
+
+        registerButton = new Button("Register");
+        registerButton.addActionListener(this);
+        add(registerButton);
+
+        setSize(300, 200);
+        setTitle("Appointment System");
+        setVisible(true);
+    }
+
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == loginButton) {
+            login();
+        } else if (e.getSource() == registerButton) {
+            register();
+        }
+    }
+
+    private void login() {
+        String username = usernameField.getText();
+        String password = passwordField.getText();
+
+        // Validate login
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "root", "password");
+             PreparedStatement stmt = conn.prepareStatement("SELECT * FROM users WHERE id_number=? AND password=?")) {
+            stmt.setString(1, username);
+            stmt.setString(2, password);
+            ResultSet rs = stmt.executeQuery();
+
+            if (rs.next()) {
+                String userType = rs.getString("user_type");
+                if ("patient".equals(userType)) {
+                    new PatientDashboard(rs.getInt("id"));
+                } else if ("doctor".equals(userType)) {
+                    // Implement DoctorDashboard
+                } else if ("admin".equals(userType)) {
+                    // Implement AdminDashboard
+                }
+                dispose();
+            } else {
+                JOptionPane.showMessageDialog(this, "Invalid username or password");
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    private void register() {
+        // Implement registration logic
+    }
+
+    public static void main(String[] args) {
+        new AppointmentSystem();
+    }
+}
+
+class PatientDashboard extends Frame {
+    private int patientId;
+
+    public PatientDashboard(int patientId) {
+        this.patientId = patientId;
+
+        setLayout(new FlowLayout());
+
+        Button bookAppointmentButton = new Button("Book Appointment");
+        bookAppointmentButton.addActionListener(e -> bookAppointment());
+        add(bookAppointmentButton);
+
+        Button viewAppointmentsButton = new Button("View Appointments");
+        viewAppointmentsButton.addActionListener(e -> viewAppointments());
+        add(viewAppointmentsButton);
+
+        setSize(300, 200);
+        setTitle("Patient Dashboard");
+        setVisible(true);
+    }
+
+    private void bookAppointment() {
+        // Implement booking logic
+    }
+
+    private void viewAppointments() {
+        // Implement viewing logic
+    }
+}
+private void bookAppointment() {
+    // GUI components for booking
+    Dialog dialog = new Dialog(this, "Book Appointment", true);
+    dialog.setLayout(new FlowLayout());
+
+    dialog.add(new Label("Doctor ID:"));
+    TextField doctorIdField = new TextField(20);
+    dialog.add(doctorIdField);
+
+    dialog.add(new Label("Appointment Date (YYYY-MM-DD):"));
+    TextField dateField = new TextField(20);
+    dialog.add(dateField);
+
+    Button bookButton = new Button("Book");
+    bookButton.addActionListener(e -> {
+        String doctorId = doctorIdField.getText();
+        String date = dateField.getText();
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "root", "password");
+             PreparedStatement stmt = conn.prepareStatement("INSERT INTO appointments (user_id, doctor_id, appointment_date, department, status) VALUES (?, ?, ?, 'General', 'scheduled')")) {
+            stmt.setInt(1, patientId);
+            stmt.setInt(2, Integer.parseInt(doctorId));
+            stmt.setDate(3, Date.valueOf(date));
+            stmt.executeUpdate();
+            JOptionPane.showMessageDialog(this, "Appointment booked successfully");
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            JOptionPane.showMessageDialog(this, "Failed to book appointment");
+        }
+        dialog.dispose();
+    });
+    dialog.add(bookButton);
+
+    dialog.setSize(300, 200);
+    dialog.setVisible(true);
+}
+private void viewAppointments() {
+    // GUI components for viewing appointments
+    Dialog dialog = new Dialog(this, "View Appointments", true);
+    dialog.setLayout(new FlowLayout());
+
+    TextArea textArea = new TextArea(10, 40);
+    dialog.add(textArea);
+
+    try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "root", "password");
+         PreparedStatement stmt = conn.prepareStatement("SELECT * FROM appointments WHERE user_id=?")) {
+        stmt.setInt(1, patientId);
+        ResultSet rs = stmt.executeQuery();
+
+        StringBuilder sb = new StringBuilder();
+        while (rs.next()) {
+            sb.append("Appointment ID: ").append(rs.getInt("id")).append("\n");
+            sb.append("Doctor ID: ").append(rs.getInt("doctor_id")).append("\n");
+            sb.append("Date: ").append(rs.getDate("appointment_date")).append("\n");
+            sb.append("Department: ").append(rs.getString("department")).append("\n");
+            sb.append("Status: ").append(rs.getString("status")).append("\n\n");
+        }
+        textArea.setText(sb.toString());
+    } catch (SQLException ex) {
+        ex.printStackTrace();
+    }
+
+    dialog.setSize(500, 300);
+    dialog.setVisible(true);
+}
+private void register() {
+    // GUI components for registration
+    Dialog dialog = new Dialog(this, "Register", true);
+    dialog.setLayout(new GridLayout(8, 2));
+
+    dialog.add(new Label("ID Number:"));
+    TextField idNumberField = new TextField(20);
+    dialog.add(idNumberField);
+
+    dialog.add(new Label("Name:"));
+    TextField nameField = new TextField(20);
+    dialog.add(nameField);
+
+    dialog.add(new Label("Age:"));
+    TextField ageField = new TextField(20);
+    dialog.add(ageField);
+
+    dialog.add(new Label("Gender:"));
+    TextField genderField = new TextField(20);
+    dialog.add(genderField);
+
+    dialog.add(new Label("Address:"));
+    TextField addressField = new TextField(20);
+    dialog.add(addressField);
+
+    dialog.add(new Label("Contact:"));
+    TextField contactField = new TextField(20);
+    dialog.add(contactField);
+
+    dialog.add(new Label("Password:"));
+    TextField passwordField = new TextField(20);
+    passwordField.setEchoChar('*');
+    dialog.add(passwordField);
+
+    Button registerButton = new Button("Register");
+    registerButton.addActionListener(e -> {
+        String idNumber = idNumberField.getText();
+        String name = nameField.getText();
+        int age = Integer.parseInt(ageField.getText());
+        String gender = genderField.getText();
+        String address = addressField.getText();
+        String contact = contactField.getText();
+        String password = passwordField.getText();
+
+        try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "root", "password");
+             PreparedStatement stmt = conn.prepareStatement("INSERT INTO users (id_number, name, age, gender, address, contact, user_type, password) VALUES (?, ?, ?, ?, ?, ?, 'patient', ?)")) {
+            stmt.setString(1, idNumber);
+            stmt.setString(2, name);
+            stmt.setInt(3, age);
+            stmt.setString(4, gender);
+            stmt.setString(5, address);
+            stmt.setString(6, contact);
+            stmt.setString(7, password);
+            stmt.executeUpdate();
+            JOptionPane.showMessageDialog(this, "Registered

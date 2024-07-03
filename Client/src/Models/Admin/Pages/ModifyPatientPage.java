@@ -49,6 +49,7 @@ public class ModifyPatientPage extends Frame implements ActionListener {
         setTitle("Modify Patient Information");
         setSize(400, 300);
         setVisible(true);
+        setLocationRelativeTo(null);
     }
 
     public void actionPerformed(ActionEvent e) {

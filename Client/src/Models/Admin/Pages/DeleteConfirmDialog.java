@@ -1,10 +1,10 @@
 package src.Models.Admin.Pages;
 
+import src.Models.Admin.*;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import src.Models.Admin.*;
-
 
 class DeleteConfirmDialog extends Dialog implements ActionListener {
     private Button confirmButton, cancelButton;
@@ -17,7 +17,9 @@ class DeleteConfirmDialog extends Dialog implements ActionListener {
         this.objectType = objectType;
 
         setLayout(new BorderLayout());
-        add(new Label("Object Info: " + objectInfo), BorderLayout.CENTER);
+        TextArea objectInfoArea = new TextArea(objectInfo);
+        objectInfoArea.setEditable(false);
+        add(objectInfoArea, BorderLayout.CENTER);
 
         Panel panel = new Panel();
         confirmButton = new Button("Confirm");
@@ -31,8 +33,9 @@ class DeleteConfirmDialog extends Dialog implements ActionListener {
 
         add(panel, BorderLayout.SOUTH);
 
-        setSize(300, 150);
+        setSize(400, 300);
         setVisible(true);
+        setLocationRelativeTo(null);
     }
 
     public void actionPerformed(ActionEvent e) {

@@ -6,6 +6,7 @@ import  src.Models.Register;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+import src.Models.Admin.doctorpage.FunctionOfDoctor;
 import src.Models.Patient.AppointmentSystem;
 import src.Models.Admin.Admin;
 
@@ -134,6 +135,7 @@ public class Client {
             }
             if (setCurrentModle == DoctorModel) {
                 currentModle = DoctorModel;
+                new FunctionOfDoctor();
             }
             if (setCurrentModle == PatientModel) {
                 currentModle = PatientModel;

@@ -71,7 +71,7 @@ public class ApprovePage extends Frame implements ActionListener {
         }
 
         try {
-            if (resultSet != null && resultSet.next()) {
+            if (resultSet != null && resultSet.isBeforeFirst()) { // Check if the result set is not empty
                 tmp = new ApproveDialog(this, resultSet, objectType);
             } else {
                 showNoPendingApprovalsDialog();

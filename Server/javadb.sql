@@ -89,11 +89,11 @@ CREATE TABLE orders (
     FOREIGN KEY (d_id) REFERENCES doctor(d_id)
 );
 INSERT INTO orders (o_id,p_id, d_id, o_history, o_start, o_end, o_state, o_total_price, o_price_state) VALUES
-(1,1, 1, 'History1', '2023-06-01 09:00:00', '2023-06-01 09:30:00', 'Completed', 200.00, TRUE),
-(2,2, 2, 'History2', '2023-06-02 10:00:00', '2023-06-02 10:30:00', 'Pending', 150.00, FALSE),
-(3,3, 3, 'History3', '2023-06-03 11:00:00', '2023-06-03 11:30:00', 'Completed', 180.00, TRUE),
-(4,4, 4, 'History4', '2023-06-04 12:00:00', '2023-06-04 12:30:00', 'Canceled', 200.00, FALSE),
-(5,5, 5, 'History5', '2023-06-05 13:00:00', '2023-06-05 13:30:00', 'Completed', 220.00, TRUE);
+(1,1, 1, 'History1', '2024-07-03 09:00:00', '2023-06-01 09:30:00', 'Completed', 200.00, TRUE),
+(2,2, 2, 'History2', '2024-07-04 10:00:00', '2023-06-02 10:30:00', 'Pending', 150.00, FALSE),
+(3,3, 3, 'History3', '2024-07-03 11:00:00', '2023-06-03 11:30:00', 'Completed', 180.00, TRUE),
+(4,4, 4, 'History4', '2024-07-04 12:00:00', '2023-06-04 12:30:00', 'Canceled', 200.00, FALSE),
+(5,5, 5, 'History5', '2024-07-05 13:00:00', '2023-06-05 13:30:00', 'Completed', 220.00, TRUE);
 
 
 
@@ -114,11 +114,11 @@ CREATE TABLE information (
     FOREIGN KEY (d_id) REFERENCES doctor(d_id)
 );
 INSERT INTO information (info_id,info_date, info_price, d_id, info_cycle, info_state) VALUES
-(1,'2023-06-01', 50.00, 1, FALSE, TRUE),
-(2,'2023-06-02', 60.00, 2, TRUE, FALSE),
-(3,'2023-06-03', 55.00, 3, FALSE, TRUE),
-(4,'2023-06-04', 70.00, 4, TRUE, TRUE),
-(5,'2023-06-05', 65.00, 5, FALSE,TRUE);
+(1,'2024-07-03', 50.00, 1, FALSE, TRUE),
+(2,'2024-07-04', 60.00, 2, TRUE, FALSE),
+(3,'2024-07-03', 55.00, 3, FALSE, TRUE),
+(4,'2024-07-04', 70.00, 4, TRUE, TRUE),
+(5,'2024-07-05', 65.00, 5, FALSE,TRUE);
 
 
 -- arrange (出诊安排)
@@ -134,11 +134,11 @@ CREATE TABLE arrange (
     FOREIGN KEY (info_id) REFERENCES information(info_id)
 );
 INSERT INTO arrange (ar_time, d_id, p_id, info_id) VALUES
-('2023-06-01 09:00:00', 1, 1, 1),
-('2023-06-02 10:00:00', 2, 2, 2),
-('2023-06-03 11:00:00', 3, 3, 3),
-('2023-06-04 12:00:00', 4, 4, 4),
-('2023-06-05 13:00:00', 5, 5, 5);
+('2024-07-03 09:00:00', 1, 1, 1),
+('2024-07-02 10:00:00', 2, 2, 2),
+('2024-07-03 11:00:00', 3, 3, 3),
+('2024-07-04 12:00:00', 4, 4, 4),
+('2024-07-05 13:00:00', 5, 5, 5);
 
 
 
