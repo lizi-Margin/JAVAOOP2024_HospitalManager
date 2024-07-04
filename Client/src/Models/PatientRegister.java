@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 import src.Client;
 
-public class Register extends Frame {
+public class PatientRegister extends Frame {
     private TextField idField;
     private TextField nameField;
     private TextField ageField;
@@ -19,18 +19,13 @@ public class Register extends Frame {
     private TextField addressField;
     private TextField contactField;
     private TextField passwordField;
-    private Choice userTypeChoice;
+    private TextField historyField;
 
-    public  Register() {
+    public  PatientRegister() {
         setTitle("Register");
         setSize(400, 300);
         setLayout(new GridLayout(9, 2));
 
-        Label userTypeLabel = new Label("User Type:");
-        userTypeChoice = new Choice();
-        userTypeChoice.add("Patient");
-        userTypeChoice.add("Doctor");
-        userTypeChoice.add("Admin");
 
         Label idLabel = new Label("Identity Card Index:");
         idField = new TextField();
@@ -46,12 +41,12 @@ public class Register extends Frame {
         contactField = new TextField();
         Label passwordLabel = new Label("Password:");
         passwordField = new TextField();
+        Label historyLabel = new Label("Medical History:");
+        historyField = new TextField();
 
         Button registerButton = new Button("Register Now");
         registerButton.addActionListener(new RegisterButtonListener());
 
-        add(userTypeLabel);
-        add(userTypeChoice);
         add(idLabel);
         add(idField);
         add(nameLabel);
@@ -66,6 +61,8 @@ public class Register extends Frame {
         add(contactField);
         add(passwordLabel);
         add(passwordField);
+        add(historyLabel);
+        add(historyField);
         add(new Label());
         add(registerButton);
 
@@ -85,9 +82,7 @@ public class Register extends Frame {
 
     private class RegisterButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            boolean success = true;
 
-            String userType = userTypeChoice.getSelectedItem();
             String id = idField.getText();
             String name = nameField.getText();
             int age = Integer.parseInt( ageField.getText());
@@ -95,9 +90,9 @@ public class Register extends Frame {
             String address = addressField.getText();
             String contact = contactField.getText();
             String password = passwordField.getText();
+            String history = historyField.getText();
 
 
-            System.out.println("用户类型: " + userType);
             System.out.println("身份证号: " + id);
             System.out.println("姓名: " + name);
             System.out.println("年龄: " + age);
@@ -105,58 +100,22 @@ public class Register extends Frame {
             System.out.println("住址: " + address);
             System.out.println("联系方式: " + contact);
 
-            if (!(userType.equals("Patient") ||userType.equals("Doctor") || userType.equals("Admin") ))
-                return;
-            if (!(userType.equals("Patient")  )) return;
 
             try {
-                String Sql = switch (userType) {
-                    case "Patient" ->
-                            String.format("SELECT p_id FROM patient WHERE p_name = '%s' AND p_password = '%s'", name, password);
-                    case "Doctor" ->
-                            String.format("SELECT d_id FROM doctor WHERE d_name = '%s' AND d_password = '%s'", name, password);
-                    default ->
-                            String.format("SELECT a_id FROM admin WHERE a_name = '%s' AND a_password = '%s'", name, password);
-                };
+                String Sql = String.format("SELECT p_id FROM patient WHERE p_name = '%s' AND p_password = '%s'", name, password);
                 ResultSet rs = Client.dbManager.executeQuery(Sql);
                 if (rs.next())
                     return;
 
 
-                Sql = switch (userType) {
-                    case "Patient" ->
-                            "SELECT COUNT(*) FROM patient;";
-                    case "Doctor" ->
-                            "SELECT COUNT(*) FROM doctor;";
-                    default ->
-                            "SELECT COUNT(*) FROM admin;";
-                };
-                rs = Client.dbManager.executeQuery(Sql);
-                int len;
-                if( rs.next())
-                    len = rs.getInt(1);
-                else
-                    return;
+                Sql = String.format("INSERT INTO patient  ( p_age,p_password, p_name, p_gender, p_card, p_phone, p_address,p_history) VALUES (%d,'%s' , '%s', '%s', '%s', '%s', '%s', '%s')",
+                        age,password,name,gender,id,contact,address,history);
 
-
-                Sql = switch (userType) {
-                    case "Patient" ->
-                            String.format("INSERT INTO %s (p_id, p_password, p_name, p_gender, p_card, p_phone, p_address,p_age,p_history) VALUES (%d,'%s' , '%s', '%s', '%s', '%s', '%s',%d,'%s')",
-                                    userType,len+1,password,name,gender,id,contact,address,(age),"None");
-                    case "Doctor" ->
-                            String.format("INSERT INTO %s (d_id, d_password, d_name, d_gender, d_card, d_phone, d_address) VALUES (%d,'%s' , '%s', '%s', '%s', '%s', '%s')",
-                                    userType,len+1,password,name,gender,id,contact,address);
-                    default ->
-                            String.format("INSERT INTO %s (a_id, a_password, a_name, a_gender, a_card, a_phone, a_address) VALUES (%d,'%s' , '%s', '%s', '%s', '%s', '%s')",
-                                    userType,len+1,password,name,gender,id,contact,address);
-                };
                 Client.dbManager.executeUpdate(Sql);
 
             }catch (SQLException es){
                 es.printStackTrace();
-                success = false;
             }
-
             switchToLoginModule();
         }
         private void switchToLoginModule(){

@@ -12,6 +12,7 @@ import src.Client;
 
 public class Login extends JFrame {
     static final int LoginFailure = 0;
+    static final int AccountVerifying = -1;
     static final int AdminAccount = 1;
     static final int DoctorAccount = 2;
     static final int PatientAccount = 3;
@@ -122,45 +123,68 @@ public class Login extends JFrame {
 
         // Example SQL queries for different user types
         String adminSql = String.format("SELECT * FROM admin WHERE a_name = '%s' AND a_password = '%s'",userName,password);
-        String doctorSql = String.format("SELECT d_id FROM doctor WHERE d_name = '%s' AND d_password = '%s'",userName,password);
-        String patientSql = String.format("SELECT p_id FROM patient WHERE p_name = '%s' AND p_password = '%s'",userName,password);
-        System.out.println(adminSql);
+        String doctorSql = String.format("SELECT * FROM doctor WHERE d_name = '%s' AND d_password = '%s'",userName,password);
+        String patientSql = String.format("SELECT * FROM patient WHERE p_name = '%s' AND p_password = '%s'",userName,password);
 
-        // Admin check
-        ResultSet rs = Client.dbManager.executeQuery(adminSql);
-        if (rs.next()) {
-            System.out.println(  rs.getBoolean("a_state" ));
-            if (!  rs.getBoolean("a_state" )){
-                System.out.println("reset admin password");
-                PasswordDialog passwordDialog = new PasswordDialog(this);
-                passwordDialog.setVisible(true);
-                String newPass = passwordDialog.getPassword();
-                if(newPass.isEmpty()) {
-                    this.handleLoginResult(LoginFailure, Client.nullUserId);
-                    return LoginFailure;
+        switch (userTypeChoice.getSelectedItem()) {
+            case "Admin":
+            // Admin check
+            ResultSet rs = Client.dbManager.executeQuery(adminSql);
+            if (rs.next()) {
+                if (!rs.getBoolean("a_state")) {
+                    this.handleLoginResult(AccountVerifying, Client.nullUserId);
+                    return AccountVerifying;
                 }
-                adminSql = String.format("UPDATE admin SET a_state = %b  , a_password = '%s'  WHERE a_id = %d",true,newPass,rs.getInt("a_id"));
-                System.out.println(adminSql);
-                Client.dbManager.executeUpdate(adminSql);
+                System.out.println(rs.getBoolean("a_password_modified"));
+                if (!rs.getBoolean("a_password_modified")) {
+                    System.out.println("reset admin password");
+                    PasswordDialog passwordDialog = new PasswordDialog(this);
+                    passwordDialog.setVisible(true);
+                    String newPass = passwordDialog.getPassword();
+                    if (newPass.isEmpty()) {
+                        this.handleLoginResult(LoginFailure, Client.nullUserId);
+                        return LoginFailure;
+                    }
+                    adminSql = String.format("UPDATE admin SET a_password_modified = %b  , a_password = '%s'  WHERE a_id = %d", true, newPass, rs.getInt("a_id"));
+                    System.out.println(adminSql);
+                    Client.dbManager.executeUpdate(adminSql);
+                }
+                this.handleLoginResult(AdminAccount, rs.getInt("a_id"));
+                return AdminAccount;
             }
-            this.handleLoginResult(AdminAccount,rs.getInt("a_id"));
-            return AdminAccount;
+            break;
+
+            case "Doctor":
+            // Doctor check
+            rs = Client.dbManager.executeQuery(doctorSql);
+            if (rs.next()) {
+                if (!rs.getBoolean("d_state")) {
+                    this.handleLoginResult(AccountVerifying, Client.nullUserId);
+                    return AccountVerifying;
+                }
+                this.handleLoginResult(DoctorAccount, rs.getInt("d_id"));
+                return DoctorAccount;
+            }
+            break;
+
+            case "Patient":
+            // Patient check
+            rs = Client.dbManager.executeQuery(patientSql);
+            if (rs.next()) {
+                if (!rs.getBoolean("p_state")) {
+                    this.handleLoginResult(AccountVerifying, Client.nullUserId);
+                    return AccountVerifying;
+                }
+                this.handleLoginResult(PatientAccount, rs.getInt("p_id"));
+                return PatientAccount;
+            }
+            break;
+
+            default:
+                break;
         }
 
-        // Doctor check
-        rs = Client.dbManager.executeQuery(doctorSql);
-        if (rs.next()) {
-            this.handleLoginResult(DoctorAccount,rs.getInt("d_id"));
-            return DoctorAccount;
-        }
-
-        // Patient check
-        rs = Client.dbManager.executeQuery(patientSql);
-        if (rs.next()) {
-            this.handleLoginResult(PatientAccount,rs.getInt("p_id"));
-            return PatientAccount;
-        }
-
+        this.handleLoginResult(LoginFailure, Client.nullUserId);
         return LoginFailure;
     }
 
@@ -180,6 +204,10 @@ public class Login extends JFrame {
                 statusLabel.setText("Patient logged in.");
                 Client.setUser(id,"Patient");
                 switchToPatientModule();
+                break;
+
+            case AccountVerifying:
+                statusLabel.setText("Account verying by admin. Please wait.");
                 break;
             default:
                 statusLabel.setText("Login failed.");
@@ -215,9 +243,24 @@ public class Login extends JFrame {
     }
 
     private void switchToRegisterModule() {
-        Client.switchTo(Client.RegisterModel);
-        setVisible(false);
-        dispose();
+        switch (userTypeChoice.getSelectedItem()){
+            case "Admin":
+                Client.switchTo(Client.AdminRegisterModel);
+                setVisible(false);
+                dispose();
+                break;
+            case "Doctor":
+                Client.switchTo(Client.DoctorRegisterModel);
+                setVisible(false);
+                dispose();
+                break;
+//            case "Patient":
+            default:
+                Client.switchTo(Client.PatientRegisterModel);
+                setVisible(false);
+                dispose();
+                break;
+        }
     }
 
     public class PasswordDialog extends JDialog {

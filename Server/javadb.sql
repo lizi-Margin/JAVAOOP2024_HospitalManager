@@ -2,32 +2,34 @@ DROP TABLE IF EXISTS `arrange`;
 DROP TABLE IF EXISTS `information`;
 DROP TABLE IF EXISTS `orders`;
 DROP TABLE IF EXISTS `record`;
+SET GLOBAL max_connections = 30000;
 
 
 
 -- admin
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE admin (
-    a_id INT PRIMARY KEY,
-    a_password VARCHAR(50) NOT NULL,
+    a_id INT PRIMARY KEY AUTO_INCREMENT,
+    a_password VARCHAR(50) DEFAULT '000000',
     a_name VARCHAR(100) NOT NULL,
     a_gender VARCHAR(10) NOT NULL,
     a_card VARCHAR(20) NOT NULL,
     a_phone VARCHAR(20) NOT NULL,
     a_address VARCHAR(200) NOT NULL,
-    a_state BOOLEAN DEFAULT FALSE
+    a_state BOOLEAN DEFAULT FALSE,
+    a_password_modified BOOLEAN DEFAULT FALSE
 );
-INSERT INTO admin (a_id, a_password, a_name, a_gender, a_card, a_phone, a_address, a_state) VALUES
-(1, 'password1', 'Admin1', 'Male', '1234567890', '123-456-7890', '123 Admin Street', TRUE),
-(2, 'password2', 'Admin2', 'Female', '1234567891', '123-456-7891', '124 Admin Street',True),
-(3, 'password3', 'Admin3', 'Male', '1234567892', '123-456-7892', '125 Admin Street',FALSE),
-(4, 'password4', 'Admin4', 'Female', '1234567893', '123-456-7893', '126 Admin Street',TRUE),
-(5, 'password5', 'Admin5', 'Male', '1234567894', '123-456-7894', '127 Admin Street',FALSE);
+INSERT INTO admin (a_id,  a_name, a_gender, a_card, a_phone, a_address, a_state) VALUES
+(1,  'Admin1', 'Male', '1234567890', '123-456-7890', '123 Admin Street', TRUE),
+(2,  'Admin2', 'Female', '1234567891', '123-456-7891', '124 Admin Street',True),
+(3,  'Admin3', 'Male', '1234567892', '123-456-7892', '125 Admin Street',FALSE),
+(4,  'Admin4', 'Female', '1234567893', '123-456-7893', '126 Admin Street',TRUE),
+(5,  'Admin5', 'Male', '1234567894', '123-456-7894', '127 Admin Street',FALSE);
 
 -- patient
 DROP TABLE IF EXISTS `patient`;
 CREATE TABLE patient (
-    p_id INT PRIMARY KEY,
+    p_id INT PRIMARY KEY AUTO_INCREMENT,
     p_password VARCHAR(50) NOT NULL,
     p_name VARCHAR(100) NOT NULL,
     p_gender VARCHAR(10) NOT NULL,
@@ -48,7 +50,7 @@ INSERT INTO patient (p_id, p_password, p_name, p_gender, p_card, p_phone, p_addr
 -- doctor
 DROP TABLE IF EXISTS `doctor`;
 CREATE TABLE doctor (
-    d_id INT PRIMARY KEY,
+    d_id INT PRIMARY KEY AUTO_INCREMENT,
     d_password VARCHAR(50) NOT NULL,
     d_name VARCHAR(100) NOT NULL,
     d_gender VARCHAR(10) NOT NULL,
@@ -60,7 +62,7 @@ CREATE TABLE doctor (
     d_introduction TEXT NOT NULL,
     d_section VARCHAR(100) NOT NULL,
     
-    d_price DECIMAL(10, 2) NOT NULL,
+    d_price DECIMAL(10, 2) DEFAULT 50.0,
     d_hospital VARCHAR(100) NOT NULL,
     d_state BOOLEAN DEFAULT FALSE
 );

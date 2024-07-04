@@ -2,7 +2,9 @@ package  src;
 import src.DatabaseManager.*;
 import src.Models.Admin.Pages.AdminMainPage;
 import src.Models.Login;
-import  src.Models.Register;
+import  src.Models.PatientRegister;
+import  src.Models.DoctorRegister;
+import  src.Models.AdminRegister;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -29,7 +31,9 @@ public class Client {
     public static final int AdminModel = 1;
     public static final int DoctorModel = 2;
     public static final int PatientModel = 3;
-    public static final int RegisterModel = 4;
+    public static final int PatientRegisterModel = 4;
+    public static final int DoctorRegisterModel = 5;
+    public static final int AdminRegisterModel = 6;
 
     public static volatile int setCurrentModle = NULL;
     private static int currentModle = NULL;
@@ -101,15 +105,13 @@ public class Client {
                 runService();
             }catch (InterruptedException e) {
                 e.printStackTrace();
-            }finally{
-                lock.unlock();
             }
         }
     }
 
 
     private static void runService(){
-        lock.lock();
+            lock.lock();
 
             if (setCurrentModle == EXIt)
                 System.exit(0);
@@ -120,30 +122,46 @@ public class Client {
             System.out.print("  ");
             System.out.println(currentModle);
 
-            if (setCurrentModle == LoginModel) {
-                currentModle = LoginModel;
-                new Login().setVisible(true);
-            }
-            if (setCurrentModle == RegisterModel) {
-                currentModle = RegisterModel;
-                new Register().setVisible(true);
-            }
-            if (setCurrentModle == AdminModel) {
-                currentModle = AdminModel;
-                AdminMainPage adminMainPage = new AdminMainPage();
-                adminMainPage.setVisible(true);
-            }
-            if (setCurrentModle == DoctorModel) {
-                currentModle = DoctorModel;
-                new FunctionOfDoctor();
-            }
-            if (setCurrentModle == PatientModel) {
-                currentModle = PatientModel;
-                new AppointmentSystem();
+            switch(setCurrentModle) {
+
+                case LoginModel :
+                    currentModle = LoginModel;
+                    new Login().setVisible(true);
+                    break;
+
+                case PatientRegisterModel:
+                    currentModle = PatientRegisterModel;
+                    new PatientRegister().setVisible(true);
+                    break;
+                case DoctorRegisterModel:
+                    currentModle = DoctorRegisterModel;
+                    new DoctorRegister().setVisible(true);
+                    break;
+
+                case AdminRegisterModel:
+                    currentModle = AdminRegisterModel;
+                    new AdminRegister().setVisible(true);
+                    break;
+
+                case AdminModel:
+                    currentModle = AdminModel;
+                    AdminMainPage adminMainPage = new AdminMainPage();
+                    adminMainPage.setVisible(true);
+                    break;
+
+                case DoctorModel:
+                    currentModle = DoctorModel;
+                    new FunctionOfDoctor();
+                    break;
+
+                case PatientModel:
+                    currentModle = PatientModel;
+                    new AppointmentSystem();
+                    break;
             }
 
             setCurrentModle = NULL;
-
+            lock.unlock();
 
     }
 
