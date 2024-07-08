@@ -1,0 +1,672 @@
+12-Jun-2024 12:15:59.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+12-Jun-2024 12:15:59.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+12-Jun-2024 12:15:59.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+12-Jun-2024 12:15:59.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+12-Jun-2024 12:15:59.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+12-Jun-2024 12:15:59.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Jun-2024 12:15:59.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+12-Jun-2024 12:15:59.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\tomcat
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time\conf\logging.properties
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\tomcat
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time\temp
+12-Jun-2024 12:15:59.482 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\33149\scoop\apps\miniconda3\current;C:\Users\33149\scoop\apps\miniconda3\current\Library\mingw-w64\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\usr\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\miniconda3\current\Scripts;C:\Users\33149\scoop\apps\miniconda3\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\condabin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\dotnet;C:\Program Files\CMake\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\33149\scoop\apps\mingw-winlibs-llvm\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\scripts;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Users\33149\scoop\apps\gcc\current\bin;C:\Users\33149\scoop\apps\python\current\Scripts;C:\Users\33149\scoop\apps\python\current;C:\Users\33149\scoop\shims;C:\Users\33149\AppData\Local\Microsoft\WindowsApps;C:\Users\33149\AppData\Local\Quartus\modelsim_ase\win32aloem;C:\Users\33149\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2024.1.1\bin;.;.]
+12-Jun-2024 12:15:59.529 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:15:59.560 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 550 ms
+12-Jun-2024 12:15:59.626 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Jun-2024 12:15:59.626 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+12-Jun-2024 12:15:59.642 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time\conf\Catalina\localhost\time.xml]
+12-Jun-2024 12:15:59.719 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.DirResourceSet@2f9dcaf0]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:130)
+		at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:663)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:161)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: java.lang.IllegalArgumentException: The directory specified by base and internal path [C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time]\[] does not exist.
+		at org.apache.catalina.webresources.DirResourceSet.checkType(DirResourceSet.java:281)
+		at org.apache.catalina.webresources.AbstractFileResourceSet.initInternal(AbstractFileResourceSet.java:229)
+		at org.apache.catalina.webresources.DirResourceSet.initInternal(DirResourceSet.java:288)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		... 16 more
+12-Jun-2024 12:15:59.721 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time\conf\Catalina\localhost\time.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.DirResourceSet@2f9dcaf0]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:130)
+		at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:663)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:161)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		... 9 more
+	Caused by: java.lang.IllegalArgumentException: The directory specified by base and internal path [C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time]\[] does not exist.
+		at org.apache.catalina.webresources.DirResourceSet.checkType(DirResourceSet.java:281)
+		at org.apache.catalina.webresources.AbstractFileResourceSet.initInternal(AbstractFileResourceSet.java:229)
+		at org.apache.catalina.webresources.DirResourceSet.initInternal(DirResourceSet.java:288)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		... 16 more
+12-Jun-2024 12:15:59.730 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time\conf\Catalina\localhost\time.xml] has finished in [88] ms
+12-Jun-2024 12:15:59.733 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time\webapps\app]
+12-Jun-2024 12:16:00.047 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time\webapps\app] has finished in [314] ms
+12-Jun-2024 12:16:00.062 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:16:00.133 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 567 ms
+12-Jun-2024 12:16:07.677 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:16:07.687 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Jun-2024 12:16:07.708 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:16:07.721 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:21:50.782 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+12-Jun-2024 12:21:50.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+12-Jun-2024 12:21:50.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+12-Jun-2024 12:21:50.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+12-Jun-2024 12:21:50.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+12-Jun-2024 12:21:50.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Jun-2024 12:21:50.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+12-Jun-2024 12:21:50.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+12-Jun-2024 12:21:50.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+12-Jun-2024 12:21:50.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time
+12-Jun-2024 12:21:50.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\tomcat
+12-Jun-2024 12:21:50.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+12-Jun-2024 12:21:50.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+12-Jun-2024 12:21:50.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+12-Jun-2024 12:21:50.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+12-Jun-2024 12:21:50.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Jun-2024 12:21:50.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time\conf\logging.properties
+12-Jun-2024 12:21:50.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Jun-2024 12:21:50.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Jun-2024 12:21:50.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Jun-2024 12:21:50.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Jun-2024 12:21:50.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time
+12-Jun-2024 12:21:50.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\tomcat
+12-Jun-2024 12:21:50.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time\temp
+12-Jun-2024 12:21:50.801 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+12-Jun-2024 12:21:50.801 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+12-Jun-2024 12:21:50.801 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Jun-2024 12:21:50.828 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+12-Jun-2024 12:21:50.859 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:21:50.891 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 563 ms
+12-Jun-2024 12:21:50.954 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Jun-2024 12:21:50.954 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+12-Jun-2024 12:21:50.970 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time\conf\Catalina\localhost\time.xml]
+12-Jun-2024 12:21:51.023 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.DirResourceSet@498da6fe]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:130)
+		at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:663)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:161)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: java.lang.IllegalArgumentException: The directory specified by base and internal path [C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time]\[] does not exist.
+		at org.apache.catalina.webresources.DirResourceSet.checkType(DirResourceSet.java:281)
+		at org.apache.catalina.webresources.AbstractFileResourceSet.initInternal(AbstractFileResourceSet.java:229)
+		at org.apache.catalina.webresources.DirResourceSet.initInternal(DirResourceSet.java:288)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		... 16 more
+12-Jun-2024 12:21:51.025 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time\conf\Catalina\localhost\time.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.DirResourceSet@498da6fe]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:130)
+		at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:663)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:161)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		... 9 more
+	Caused by: java.lang.IllegalArgumentException: The directory specified by base and internal path [C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time]\[] does not exist.
+		at org.apache.catalina.webresources.DirResourceSet.checkType(DirResourceSet.java:281)
+		at org.apache.catalina.webresources.AbstractFileResourceSet.initInternal(AbstractFileResourceSet.java:229)
+		at org.apache.catalina.webresources.DirResourceSet.initInternal(DirResourceSet.java:288)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		... 16 more
+12-Jun-2024 12:21:51.032 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time\conf\Catalina\localhost\time.xml] has finished in [62] ms
+12-Jun-2024 12:21:51.034 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time\webapps\app]
+12-Jun-2024 12:21:51.296 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\current_time\webapps\app] has finished in [262] ms
+12-Jun-2024 12:21:51.296 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:21:51.387 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 489 ms
+12-Jun-2024 12:22:40.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+12-Jun-2024 12:22:40.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+12-Jun-2024 12:22:40.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+12-Jun-2024 12:22:40.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+12-Jun-2024 12:22:40.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+12-Jun-2024 12:22:40.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Jun-2024 12:22:40.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+12-Jun-2024 12:22:40.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+12-Jun-2024 12:22:40.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+12-Jun-2024 12:22:40.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time
+12-Jun-2024 12:22:40.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\tomcat
+12-Jun-2024 12:22:40.169 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\logging.properties
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\tomcat
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\temp
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Jun-2024 12:22:40.174 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+12-Jun-2024 12:22:40.221 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:22:40.267 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 479 ms
+12-Jun-2024 12:22:40.314 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Jun-2024 12:22:40.314 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+12-Jun-2024 12:22:40.347 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml]
+12-Jun-2024 12:22:40.392 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.DirResourceSet@1e01a5d7]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:130)
+		at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:663)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:161)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: java.lang.IllegalArgumentException: The directory specified by base and internal path [C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time]\[] does not exist.
+		at org.apache.catalina.webresources.DirResourceSet.checkType(DirResourceSet.java:281)
+		at org.apache.catalina.webresources.AbstractFileResourceSet.initInternal(AbstractFileResourceSet.java:229)
+		at org.apache.catalina.webresources.DirResourceSet.initInternal(DirResourceSet.java:288)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		... 16 more
+12-Jun-2024 12:22:40.398 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.DirResourceSet@1e01a5d7]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:130)
+		at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:663)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:161)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		... 9 more
+	Caused by: java.lang.IllegalArgumentException: The directory specified by base and internal path [C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time]\[] does not exist.
+		at org.apache.catalina.webresources.DirResourceSet.checkType(DirResourceSet.java:281)
+		at org.apache.catalina.webresources.AbstractFileResourceSet.initInternal(AbstractFileResourceSet.java:229)
+		at org.apache.catalina.webresources.DirResourceSet.initInternal(DirResourceSet.java:288)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		... 16 more
+12-Jun-2024 12:22:40.398 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml] has finished in [51] ms
+12-Jun-2024 12:22:40.398 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\webapps\app]
+12-Jun-2024 12:22:40.688 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\webapps\app] has finished in [290] ms
+12-Jun-2024 12:22:40.703 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:22:40.774 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 505 ms
+12-Jun-2024 12:22:40.828 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:22:40.844 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Jun-2024 12:22:40.863 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:22:40.880 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:24:32.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\tomcat
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\logging.properties
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\tomcat
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\temp
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+12-Jun-2024 12:24:32.978 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Jun-2024 12:24:32.994 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+12-Jun-2024 12:24:33.040 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:24:33.072 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 487 ms
+12-Jun-2024 12:24:33.141 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Jun-2024 12:24:33.141 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+12-Jun-2024 12:24:33.157 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml]
+12-Jun-2024 12:24:33.209 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.DirResourceSet@1e01a5d7]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:130)
+		at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:663)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:161)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: java.lang.IllegalArgumentException: The directory specified by base and internal path [C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time]\[] does not exist.
+		at org.apache.catalina.webresources.DirResourceSet.checkType(DirResourceSet.java:281)
+		at org.apache.catalina.webresources.AbstractFileResourceSet.initInternal(AbstractFileResourceSet.java:229)
+		at org.apache.catalina.webresources.DirResourceSet.initInternal(DirResourceSet.java:288)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		... 16 more
+12-Jun-2024 12:24:33.213 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.DirResourceSet@1e01a5d7]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:130)
+		at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:663)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:161)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		... 9 more
+	Caused by: java.lang.IllegalArgumentException: The directory specified by base and internal path [C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time]\[] does not exist.
+		at org.apache.catalina.webresources.DirResourceSet.checkType(DirResourceSet.java:281)
+		at org.apache.catalina.webresources.AbstractFileResourceSet.initInternal(AbstractFileResourceSet.java:229)
+		at org.apache.catalina.webresources.DirResourceSet.initInternal(DirResourceSet.java:288)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		... 16 more
+12-Jun-2024 12:24:33.218 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml] has finished in [61] ms
+12-Jun-2024 12:24:33.218 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\webapps\app]
+12-Jun-2024 12:24:33.522 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\webapps\app] has finished in [304] ms
+12-Jun-2024 12:24:33.522 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:24:33.609 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 532 ms
+12-Jun-2024 12:26:33.312 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:26:33.328 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Jun-2024 12:26:33.343 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:26:33.364 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:26:35.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+12-Jun-2024 12:26:35.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+12-Jun-2024 12:26:35.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+12-Jun-2024 12:26:35.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+12-Jun-2024 12:26:35.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+12-Jun-2024 12:26:35.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Jun-2024 12:26:35.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+12-Jun-2024 12:26:35.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+12-Jun-2024 12:26:35.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+12-Jun-2024 12:26:35.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time
+12-Jun-2024 12:26:35.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\tomcat
+12-Jun-2024 12:26:35.623 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+12-Jun-2024 12:26:35.623 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+12-Jun-2024 12:26:35.624 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+12-Jun-2024 12:26:35.624 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+12-Jun-2024 12:26:35.624 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Jun-2024 12:26:35.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\logging.properties
+12-Jun-2024 12:26:35.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Jun-2024 12:26:35.628 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Jun-2024 12:26:35.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Jun-2024 12:26:35.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Jun-2024 12:26:35.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time
+12-Jun-2024 12:26:35.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\tomcat
+12-Jun-2024 12:26:35.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\temp
+12-Jun-2024 12:26:35.635 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+12-Jun-2024 12:26:35.635 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+12-Jun-2024 12:26:35.636 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Jun-2024 12:26:35.641 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+12-Jun-2024 12:26:35.688 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:26:35.719 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 505 ms
+12-Jun-2024 12:26:35.781 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Jun-2024 12:26:35.781 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+12-Jun-2024 12:26:35.797 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml]
+12-Jun-2024 12:26:35.844 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.DirResourceSet@1e01a5d7]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:130)
+		at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:663)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:161)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: java.lang.IllegalArgumentException: The directory specified by base and internal path [C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time]\[] does not exist.
+		at org.apache.catalina.webresources.DirResourceSet.checkType(DirResourceSet.java:281)
+		at org.apache.catalina.webresources.AbstractFileResourceSet.initInternal(AbstractFileResourceSet.java:229)
+		at org.apache.catalina.webresources.DirResourceSet.initInternal(DirResourceSet.java:288)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		... 16 more
+12-Jun-2024 12:26:35.859 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.DirResourceSet@1e01a5d7]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:130)
+		at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:663)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:161)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		... 9 more
+	Caused by: java.lang.IllegalArgumentException: The directory specified by base and internal path [C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time]\[] does not exist.
+		at org.apache.catalina.webresources.DirResourceSet.checkType(DirResourceSet.java:281)
+		at org.apache.catalina.webresources.AbstractFileResourceSet.initInternal(AbstractFileResourceSet.java:229)
+		at org.apache.catalina.webresources.DirResourceSet.initInternal(DirResourceSet.java:288)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		... 16 more
+12-Jun-2024 12:26:35.859 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml] has finished in [62] ms
+12-Jun-2024 12:26:35.859 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\webapps\app]
+12-Jun-2024 12:26:36.182 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\webapps\app] has finished in [323] ms
+12-Jun-2024 12:26:36.187 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:26:36.266 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 535 ms
+12-Jun-2024 12:26:58.495 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:26:58.512 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Jun-2024 12:26:58.537 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:26:58.552 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:27:00.623 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+12-Jun-2024 12:27:00.628 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+12-Jun-2024 12:27:00.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+12-Jun-2024 12:27:00.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+12-Jun-2024 12:27:00.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+12-Jun-2024 12:27:00.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Jun-2024 12:27:00.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+12-Jun-2024 12:27:00.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+12-Jun-2024 12:27:00.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+12-Jun-2024 12:27:00.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time
+12-Jun-2024 12:27:00.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\tomcat
+12-Jun-2024 12:27:00.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+12-Jun-2024 12:27:00.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+12-Jun-2024 12:27:00.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+12-Jun-2024 12:27:00.635 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+12-Jun-2024 12:27:00.635 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Jun-2024 12:27:00.636 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\logging.properties
+12-Jun-2024 12:27:00.637 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Jun-2024 12:27:00.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Jun-2024 12:27:00.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Jun-2024 12:27:00.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Jun-2024 12:27:00.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time
+12-Jun-2024 12:27:00.641 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\tomcat
+12-Jun-2024 12:27:00.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\temp
+12-Jun-2024 12:27:00.643 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+12-Jun-2024 12:27:00.643 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+12-Jun-2024 12:27:00.644 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Jun-2024 12:27:00.657 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+12-Jun-2024 12:27:00.706 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:27:00.749 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 611 ms
+12-Jun-2024 12:27:00.819 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Jun-2024 12:27:00.820 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+12-Jun-2024 12:27:00.841 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml]
+12-Jun-2024 12:27:00.904 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.DirResourceSet@1e01a5d7]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:130)
+		at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:663)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:161)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: java.lang.IllegalArgumentException: The directory specified by base and internal path [C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time]\[] does not exist.
+		at org.apache.catalina.webresources.DirResourceSet.checkType(DirResourceSet.java:281)
+		at org.apache.catalina.webresources.AbstractFileResourceSet.initInternal(AbstractFileResourceSet.java:229)
+		at org.apache.catalina.webresources.DirResourceSet.initInternal(DirResourceSet.java:288)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		... 16 more
+12-Jun-2024 12:27:00.907 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.DirResourceSet@1e01a5d7]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:130)
+		at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:663)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:161)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		... 9 more
+	Caused by: java.lang.IllegalArgumentException: The directory specified by base and internal path [C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time]\[] does not exist.
+		at org.apache.catalina.webresources.DirResourceSet.checkType(DirResourceSet.java:281)
+		at org.apache.catalina.webresources.AbstractFileResourceSet.initInternal(AbstractFileResourceSet.java:229)
+		at org.apache.catalina.webresources.DirResourceSet.initInternal(DirResourceSet.java:288)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		... 16 more
+12-Jun-2024 12:27:00.915 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml] has finished in [74] ms
+12-Jun-2024 12:27:00.917 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\webapps\app]
+12-Jun-2024 12:27:01.229 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\webapps\app] has finished in [312] ms
+12-Jun-2024 12:27:01.233 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:27:01.286 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 537 ms
+12-Jun-2024 12:27:34.313 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:27:34.313 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Jun-2024 12:27:34.338 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:27:34.353 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:27:37.156 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\tomcat
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\logging.properties
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\tomcat
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\temp
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [{4}].
+12-Jun-2024 12:27:37.166 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12-Jun-2024 12:27:37.182 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+12-Jun-2024 12:27:37.225 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:27:37.251 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 516 ms
+12-Jun-2024 12:27:37.298 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Jun-2024 12:27:37.298 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+12-Jun-2024 12:27:37.332 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml]
+12-Jun-2024 12:27:37.375 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.DirResourceSet@1e01a5d7]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:130)
+		at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:663)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:161)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: java.lang.IllegalArgumentException: The directory specified by base and internal path [C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time]\[] does not exist.
+		at org.apache.catalina.webresources.DirResourceSet.checkType(DirResourceSet.java:281)
+		at org.apache.catalina.webresources.AbstractFileResourceSet.initInternal(AbstractFileResourceSet.java:229)
+		at org.apache.catalina.webresources.DirResourceSet.initInternal(DirResourceSet.java:288)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		... 16 more
+12-Jun-2024 12:27:37.390 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.DirResourceSet@1e01a5d7]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:130)
+		at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:663)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:161)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		... 9 more
+	Caused by: java.lang.IllegalArgumentException: The directory specified by base and internal path [C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time]\[] does not exist.
+		at org.apache.catalina.webresources.DirResourceSet.checkType(DirResourceSet.java:281)
+		at org.apache.catalina.webresources.AbstractFileResourceSet.initInternal(AbstractFileResourceSet.java:229)
+		at org.apache.catalina.webresources.DirResourceSet.initInternal(DirResourceSet.java:288)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		... 16 more
+12-Jun-2024 12:27:37.390 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\conf\Catalina\localhost\time.xml] has finished in [59] ms
+12-Jun-2024 12:27:37.390 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\webapps\app]
+12-Jun-2024 12:27:37.734 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\B\8\time\webapps\app] has finished in [344] ms
+12-Jun-2024 12:27:37.734 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:27:37.824 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 562 ms
+12-Jun-2024 12:27:48.233 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:27:48.250 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Jun-2024 12:27:48.266 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Jun-2024 12:27:48.282 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

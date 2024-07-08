@@ -1,0 +1,689 @@
+06-Jun-2024 18:03:10.254 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/app] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/index.jsp]
+Duplicate local variable now
+28:         %>
+29:         当前月份为:
+30:         <%
+31:             java.time.LocalDateTime  now = java.time.LocalDateTime.now();
+32:             int year = now.getYear();
+33:             int month = now.getMonthValue();
+34:             int day = now.getDayOfMonth();
+
+
+An error occurred at line: [32] in the jsp file: [/index.jsp]
+Duplicate local variable year
+29:         当前月份为:
+30:         <%
+31:             java.time.LocalDateTime  now = java.time.LocalDateTime.now();
+32:             int year = now.getYear();
+33:             int month = now.getMonthValue();
+34:             int day = now.getDayOfMonth();
+35:             int hour = now.getHour();
+
+
+An error occurred at line: [33] in the jsp file: [/index.jsp]
+Duplicate local variable month
+30:         <%
+31:             java.time.LocalDateTime  now = java.time.LocalDateTime.now();
+32:             int year = now.getYear();
+33:             int month = now.getMonthValue();
+34:             int day = now.getDayOfMonth();
+35:             int hour = now.getHour();
+36:             int minute = now.getMinute();
+
+
+An error occurred at line: [34] in the jsp file: [/index.jsp]
+Duplicate local variable day
+31:             java.time.LocalDateTime  now = java.time.LocalDateTime.now();
+32:             int year = now.getYear();
+33:             int month = now.getMonthValue();
+34:             int day = now.getDayOfMonth();
+35:             int hour = now.getHour();
+36:             int minute = now.getMinute();
+37:             int second = now.getSecond();
+
+
+An error occurred at line: [35] in the jsp file: [/index.jsp]
+Duplicate local variable hour
+32:             int year = now.getYear();
+33:             int month = now.getMonthValue();
+34:             int day = now.getDayOfMonth();
+35:             int hour = now.getHour();
+36:             int minute = now.getMinute();
+37:             int second = now.getSecond();
+38: 
+
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+Duplicate local variable minute
+33:             int month = now.getMonthValue();
+34:             int day = now.getDayOfMonth();
+35:             int hour = now.getHour();
+36:             int minute = now.getMinute();
+37:             int second = now.getSecond();
+38: 
+39:             out.println(month);
+
+
+An error occurred at line: [37] in the jsp file: [/index.jsp]
+Duplicate local variable second
+34:             int day = now.getDayOfMonth();
+35:             int hour = now.getHour();
+36:             int minute = now.getMinute();
+37:             int second = now.getSecond();
+38: 
+39:             out.println(month);
+40:         %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [31] in the jsp file: [/index.jsp]
+Duplicate local variable now
+28:         %>
+29:         当前月份为:
+30:         <%
+31:             java.time.LocalDateTime  now = java.time.LocalDateTime.now();
+32:             int year = now.getYear();
+33:             int month = now.getMonthValue();
+34:             int day = now.getDayOfMonth();
+
+
+An error occurred at line: [32] in the jsp file: [/index.jsp]
+Duplicate local variable year
+29:         当前月份为:
+30:         <%
+31:             java.time.LocalDateTime  now = java.time.LocalDateTime.now();
+32:             int year = now.getYear();
+33:             int month = now.getMonthValue();
+34:             int day = now.getDayOfMonth();
+35:             int hour = now.getHour();
+
+
+An error occurred at line: [33] in the jsp file: [/index.jsp]
+Duplicate local variable month
+30:         <%
+31:             java.time.LocalDateTime  now = java.time.LocalDateTime.now();
+32:             int year = now.getYear();
+33:             int month = now.getMonthValue();
+34:             int day = now.getDayOfMonth();
+35:             int hour = now.getHour();
+36:             int minute = now.getMinute();
+
+
+An error occurred at line: [34] in the jsp file: [/index.jsp]
+Duplicate local variable day
+31:             java.time.LocalDateTime  now = java.time.LocalDateTime.now();
+32:             int year = now.getYear();
+33:             int month = now.getMonthValue();
+34:             int day = now.getDayOfMonth();
+35:             int hour = now.getHour();
+36:             int minute = now.getMinute();
+37:             int second = now.getSecond();
+
+
+An error occurred at line: [35] in the jsp file: [/index.jsp]
+Duplicate local variable hour
+32:             int year = now.getYear();
+33:             int month = now.getMonthValue();
+34:             int day = now.getDayOfMonth();
+35:             int hour = now.getHour();
+36:             int minute = now.getMinute();
+37:             int second = now.getSecond();
+38: 
+
+
+An error occurred at line: [36] in the jsp file: [/index.jsp]
+Duplicate local variable minute
+33:             int month = now.getMonthValue();
+34:             int day = now.getDayOfMonth();
+35:             int hour = now.getHour();
+36:             int minute = now.getMinute();
+37:             int second = now.getSecond();
+38: 
+39:             out.println(month);
+
+
+An error occurred at line: [37] in the jsp file: [/index.jsp]
+Duplicate local variable second
+34:             int day = now.getDayOfMonth();
+35:             int hour = now.getHour();
+36:             int minute = now.getMinute();
+37:             int second = now.getSecond();
+38: 
+39:             out.println(month);
+40:         %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:611)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:679)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:934)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1690)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+06-Jun-2024 19:17:28.138 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/app] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [50] in the jsp file: [/index.jsp]
+The method String(int) is undefined for the type index_jsp
+47:         <div>
+48:             当前时间为:
+49:             <%
+50:                 out.println(String( hour)+":"+String(minute)+":"+String(second));
+51:             %>
+52:         </div>
+53:     </p>
+
+
+An error occurred at line: [50] in the jsp file: [/index.jsp]
+The method String(int) is undefined for the type index_jsp
+47:         <div>
+48:             当前时间为:
+49:             <%
+50:                 out.println(String( hour)+":"+String(minute)+":"+String(second));
+51:             %>
+52:         </div>
+53:     </p>
+
+
+An error occurred at line: [50] in the jsp file: [/index.jsp]
+The method String(int) is undefined for the type index_jsp
+47:         <div>
+48:             当前时间为:
+49:             <%
+50:                 out.println(String( hour)+":"+String(minute)+":"+String(second));
+51:             %>
+52:         </div>
+53:     </p>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [50] in the jsp file: [/index.jsp]
+The method String(int) is undefined for the type index_jsp
+47:         <div>
+48:             当前时间为:
+49:             <%
+50:                 out.println(String( hour)+":"+String(minute)+":"+String(second));
+51:             %>
+52:         </div>
+53:     </p>
+
+
+An error occurred at line: [50] in the jsp file: [/index.jsp]
+The method String(int) is undefined for the type index_jsp
+47:         <div>
+48:             当前时间为:
+49:             <%
+50:                 out.println(String( hour)+":"+String(minute)+":"+String(second));
+51:             %>
+52:         </div>
+53:     </p>
+
+
+An error occurred at line: [50] in the jsp file: [/index.jsp]
+The method String(int) is undefined for the type index_jsp
+47:         <div>
+48:             当前时间为:
+49:             <%
+50:                 out.println(String( hour)+":"+String(minute)+":"+String(second));
+51:             %>
+52:         </div>
+53:     </p>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:611)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:679)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:934)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1690)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+06-Jun-2024 19:28:08.224 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/app] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [49] in the jsp file: [/index.jsp]
+Syntax error on token "import", assert expected
+46:         </div>
+47:         <div>
+48:             <%
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+
+
+An error occurred at line: [49] in the jsp file: [/index.jsp]
+java.io.BufferedReader cannot be resolved to a variable
+46:         </div>
+47:         <div>
+48:             <%
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+
+
+An error occurred at line: [50] in the jsp file: [/index.jsp]
+Syntax error on token "import", assert expected
+47:         <div>
+48:             <%
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+53:                 try {
+
+
+An error occurred at line: [50] in the jsp file: [/index.jsp]
+java.io.InputStreamReader cannot be resolved to a variable
+47:         <div>
+48:             <%
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+53:                 try {
+
+
+An error occurred at line: [51] in the jsp file: [/index.jsp]
+Syntax error on token "import", assert expected
+48:             <%
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+53:                 try {
+54:                     String serverUrl = "http://worldtimeapi.org/api/ip";
+
+
+An error occurred at line: [51] in the jsp file: [/index.jsp]
+java.net.HttpURLConnection cannot be resolved to a variable
+48:             <%
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+53:                 try {
+54:                     String serverUrl = "http://worldtimeapi.org/api/ip";
+
+
+An error occurred at line: [52] in the jsp file: [/index.jsp]
+Syntax error on token "import", assert expected
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+53:                 try {
+54:                     String serverUrl = "http://worldtimeapi.org/api/ip";
+55:                     java.net.URL url = new URL(serverUrl);
+
+
+An error occurred at line: [52] in the jsp file: [/index.jsp]
+java.net.URL cannot be resolved to a variable
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+53:                 try {
+54:                     String serverUrl = "http://worldtimeapi.org/api/ip";
+55:                     java.net.URL url = new URL(serverUrl);
+
+
+An error occurred at line: [55] in the jsp file: [/index.jsp]
+URL cannot be resolved to a type
+52:                 import java.net.URL;
+53:                 try {
+54:                     String serverUrl = "http://worldtimeapi.org/api/ip";
+55:                     java.net.URL url = new URL(serverUrl);
+56:         
+57:                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+58:         
+
+
+An error occurred at line: [57] in the jsp file: [/index.jsp]
+HttpURLConnection cannot be resolved to a type
+54:                     String serverUrl = "http://worldtimeapi.org/api/ip";
+55:                     java.net.URL url = new URL(serverUrl);
+56:         
+57:                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+58:         
+59:                     connection.setRequestMethod("GET");
+60:         
+
+
+An error occurred at line: [57] in the jsp file: [/index.jsp]
+HttpURLConnection cannot be resolved to a type
+54:                     String serverUrl = "http://worldtimeapi.org/api/ip";
+55:                     java.net.URL url = new URL(serverUrl);
+56:         
+57:                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+58:         
+59:                     connection.setRequestMethod("GET");
+60:         
+
+
+An error occurred at line: [62] in the jsp file: [/index.jsp]
+HttpURLConnection.HTTP_OK cannot be resolved to a type
+59:                     connection.setRequestMethod("GET");
+60:         
+61:                     int responseCode = connection.getResponseCode();
+62:                     if (responseCode == HttpURLConnection.HTTP_OK) {
+63:                         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+64:                         String inputLine;
+65:                         StringBuffer response = new StringBuffer();
+
+
+An error occurred at line: [63] in the jsp file: [/index.jsp]
+BufferedReader cannot be resolved to a type
+60:         
+61:                     int responseCode = connection.getResponseCode();
+62:                     if (responseCode == HttpURLConnection.HTTP_OK) {
+63:                         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+64:                         String inputLine;
+65:                         StringBuffer response = new StringBuffer();
+66:         
+
+
+An error occurred at line: [63] in the jsp file: [/index.jsp]
+BufferedReader cannot be resolved to a type
+60:         
+61:                     int responseCode = connection.getResponseCode();
+62:                     if (responseCode == HttpURLConnection.HTTP_OK) {
+63:                         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+64:                         String inputLine;
+65:                         StringBuffer response = new StringBuffer();
+66:         
+
+
+An error occurred at line: [63] in the jsp file: [/index.jsp]
+InputStreamReader cannot be resolved to a type
+60:         
+61:                     int responseCode = connection.getResponseCode();
+62:                     if (responseCode == HttpURLConnection.HTTP_OK) {
+63:                         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+64:                         String inputLine;
+65:                         StringBuffer response = new StringBuffer();
+66:         
+
+
+An error occurred at line: [65] in the jsp file: [/index.jsp]
+Duplicate local variable response
+62:                     if (responseCode == HttpURLConnection.HTTP_OK) {
+63:                         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+64:                         String inputLine;
+65:                         StringBuffer response = new StringBuffer();
+66:         
+67:                         while ((inputLine = in.readLine()) != null) {
+68:                             response.append(inputLine);
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [49] in the jsp file: [/index.jsp]
+Syntax error on token "import", assert expected
+46:         </div>
+47:         <div>
+48:             <%
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+
+
+An error occurred at line: [49] in the jsp file: [/index.jsp]
+java.io.BufferedReader cannot be resolved to a variable
+46:         </div>
+47:         <div>
+48:             <%
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+
+
+An error occurred at line: [50] in the jsp file: [/index.jsp]
+Syntax error on token "import", assert expected
+47:         <div>
+48:             <%
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+53:                 try {
+
+
+An error occurred at line: [50] in the jsp file: [/index.jsp]
+java.io.InputStreamReader cannot be resolved to a variable
+47:         <div>
+48:             <%
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+53:                 try {
+
+
+An error occurred at line: [51] in the jsp file: [/index.jsp]
+Syntax error on token "import", assert expected
+48:             <%
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+53:                 try {
+54:                     String serverUrl = "http://worldtimeapi.org/api/ip";
+
+
+An error occurred at line: [51] in the jsp file: [/index.jsp]
+java.net.HttpURLConnection cannot be resolved to a variable
+48:             <%
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+53:                 try {
+54:                     String serverUrl = "http://worldtimeapi.org/api/ip";
+
+
+An error occurred at line: [52] in the jsp file: [/index.jsp]
+Syntax error on token "import", assert expected
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+53:                 try {
+54:                     String serverUrl = "http://worldtimeapi.org/api/ip";
+55:                     java.net.URL url = new URL(serverUrl);
+
+
+An error occurred at line: [52] in the jsp file: [/index.jsp]
+java.net.URL cannot be resolved to a variable
+49:                 import java.io.BufferedReader;
+50:                 import java.io.InputStreamReader;
+51:                 import java.net.HttpURLConnection;
+52:                 import java.net.URL;
+53:                 try {
+54:                     String serverUrl = "http://worldtimeapi.org/api/ip";
+55:                     java.net.URL url = new URL(serverUrl);
+
+
+An error occurred at line: [55] in the jsp file: [/index.jsp]
+URL cannot be resolved to a type
+52:                 import java.net.URL;
+53:                 try {
+54:                     String serverUrl = "http://worldtimeapi.org/api/ip";
+55:                     java.net.URL url = new URL(serverUrl);
+56:         
+57:                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+58:         
+
+
+An error occurred at line: [57] in the jsp file: [/index.jsp]
+HttpURLConnection cannot be resolved to a type
+54:                     String serverUrl = "http://worldtimeapi.org/api/ip";
+55:                     java.net.URL url = new URL(serverUrl);
+56:         
+57:                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+58:         
+59:                     connection.setRequestMethod("GET");
+60:         
+
+
+An error occurred at line: [57] in the jsp file: [/index.jsp]
+HttpURLConnection cannot be resolved to a type
+54:                     String serverUrl = "http://worldtimeapi.org/api/ip";
+55:                     java.net.URL url = new URL(serverUrl);
+56:         
+57:                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+58:         
+59:                     connection.setRequestMethod("GET");
+60:         
+
+
+An error occurred at line: [62] in the jsp file: [/index.jsp]
+HttpURLConnection.HTTP_OK cannot be resolved to a type
+59:                     connection.setRequestMethod("GET");
+60:         
+61:                     int responseCode = connection.getResponseCode();
+62:                     if (responseCode == HttpURLConnection.HTTP_OK) {
+63:                         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+64:                         String inputLine;
+65:                         StringBuffer response = new StringBuffer();
+
+
+An error occurred at line: [63] in the jsp file: [/index.jsp]
+BufferedReader cannot be resolved to a type
+60:         
+61:                     int responseCode = connection.getResponseCode();
+62:                     if (responseCode == HttpURLConnection.HTTP_OK) {
+63:                         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+64:                         String inputLine;
+65:                         StringBuffer response = new StringBuffer();
+66:         
+
+
+An error occurred at line: [63] in the jsp file: [/index.jsp]
+BufferedReader cannot be resolved to a type
+60:         
+61:                     int responseCode = connection.getResponseCode();
+62:                     if (responseCode == HttpURLConnection.HTTP_OK) {
+63:                         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+64:                         String inputLine;
+65:                         StringBuffer response = new StringBuffer();
+66:         
+
+
+An error occurred at line: [63] in the jsp file: [/index.jsp]
+InputStreamReader cannot be resolved to a type
+60:         
+61:                     int responseCode = connection.getResponseCode();
+62:                     if (responseCode == HttpURLConnection.HTTP_OK) {
+63:                         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+64:                         String inputLine;
+65:                         StringBuffer response = new StringBuffer();
+66:         
+
+
+An error occurred at line: [65] in the jsp file: [/index.jsp]
+Duplicate local variable response
+62:                     if (responseCode == HttpURLConnection.HTTP_OK) {
+63:                         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+64:                         String inputLine;
+65:                         StringBuffer response = new StringBuffer();
+66:         
+67:                         while ((inputLine = in.readLine()) != null) {
+68:                             response.append(inputLine);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:611)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:679)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:934)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1690)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:840)

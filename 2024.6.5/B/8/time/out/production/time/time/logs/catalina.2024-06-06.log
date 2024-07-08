@@ -1,0 +1,550 @@
+06-Jun-2024 16:44:50.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+06-Jun-2024 16:44:50.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+06-Jun-2024 16:44:50.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+06-Jun-2024 16:44:50.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-Jun-2024 16:44:50.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-Jun-2024 16:44:50.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jun-2024 16:44:50.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+06-Jun-2024 16:44:50.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+06-Jun-2024 16:44:50.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+06-Jun-2024 16:44:50.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 16:44:50.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 16:44:50.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Jun-2024 16:44:50.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Jun-2024 16:44:50.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Jun-2024 16:44:50.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Jun-2024 16:44:50.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Jun-2024 16:44:50.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 16:44:50.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 16:44:50.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\time\temp
+06-Jun-2024 16:44:50.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\logging.properties
+06-Jun-2024 16:44:50.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jun-2024 16:44:50.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\33149\scoop\apps\idea\current\IDE\lib\idea_rt.jar=50354:C:\Users\33149\scoop\apps\idea\current\IDE\bin
+06-Jun-2024 16:44:50.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+06-Jun-2024 16:44:50.418 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\33149\scoop\apps\miniconda3\current;C:\Users\33149\scoop\apps\miniconda3\current\Library\mingw-w64\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\usr\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\miniconda3\current\Scripts;C:\Users\33149\scoop\apps\miniconda3\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\condabin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\dotnet;C:\Program Files\CMake\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\33149\scoop\apps\mingw-winlibs-llvm\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\scripts;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Users\33149\scoop\apps\gcc\current\bin;C:\Users\33149\scoop\apps\python\current\Scripts;C:\Users\33149\scoop\apps\python\current;C:\Users\33149\scoop\shims;C:\Users\33149\AppData\Local\Microsoft\WindowsApps;C:\Users\33149\AppData\Local\Quartus\modelsim_ase\win32aloem;C:\Users\33149\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2024.1.1\bin;.;.]
+06-Jun-2024 16:44:50.489 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 16:44:50.519 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1160 ms
+06-Jun-2024 16:44:50.584 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2024 16:44:50.585 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+06-Jun-2024 16:44:50.598 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml]
+06-Jun-2024 16:44:51.283 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml] has finished in [683] ms
+06-Jun-2024 16:44:51.291 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 16:44:51.359 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 839 ms
+06-Jun-2024 16:45:55.762 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 16:45:55.778 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Jun-2024 16:45:55.797 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 16:45:55.808 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 16:52:46.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+06-Jun-2024 16:52:46.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+06-Jun-2024 16:52:46.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+06-Jun-2024 16:52:46.812 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-Jun-2024 16:52:46.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-Jun-2024 16:52:46.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jun-2024 16:52:46.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+06-Jun-2024 16:52:46.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+06-Jun-2024 16:52:46.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+06-Jun-2024 16:52:46.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 16:52:46.813 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 16:52:46.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Jun-2024 16:52:46.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Jun-2024 16:52:46.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Jun-2024 16:52:46.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Jun-2024 16:52:46.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Jun-2024 16:52:46.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 16:52:46.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 16:52:46.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\time\temp
+06-Jun-2024 16:52:46.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\logging.properties
+06-Jun-2024 16:52:46.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jun-2024 16:52:46.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\33149\scoop\apps\idea\current\IDE\lib\idea_rt.jar=51094:C:\Users\33149\scoop\apps\idea\current\IDE\bin
+06-Jun-2024 16:52:46.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+06-Jun-2024 16:52:46.817 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\33149\scoop\apps\miniconda3\current;C:\Users\33149\scoop\apps\miniconda3\current\Library\mingw-w64\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\usr\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\miniconda3\current\Scripts;C:\Users\33149\scoop\apps\miniconda3\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\condabin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\dotnet;C:\Program Files\CMake\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\33149\scoop\apps\mingw-winlibs-llvm\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\scripts;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Users\33149\scoop\apps\gcc\current\bin;C:\Users\33149\scoop\apps\python\current\Scripts;C:\Users\33149\scoop\apps\python\current;C:\Users\33149\scoop\shims;C:\Users\33149\AppData\Local\Microsoft\WindowsApps;C:\Users\33149\AppData\Local\Quartus\modelsim_ase\win32aloem;C:\Users\33149\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2024.1.1\bin;.;.]
+06-Jun-2024 16:52:46.877 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 16:52:46.914 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 755 ms
+06-Jun-2024 16:52:46.982 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2024 16:52:46.983 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+06-Jun-2024 16:52:47.005 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml]
+06-Jun-2024 16:52:47.617 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml] has finished in [611] ms
+06-Jun-2024 16:52:47.622 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 16:52:47.706 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 792 ms
+06-Jun-2024 16:57:42.613 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 16:57:42.630 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Jun-2024 16:57:42.646 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 16:57:42.662 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 16:57:47.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+06-Jun-2024 16:57:47.218 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+06-Jun-2024 16:57:47.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+06-Jun-2024 16:57:47.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-Jun-2024 16:57:47.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-Jun-2024 16:57:47.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jun-2024 16:57:47.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+06-Jun-2024 16:57:47.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+06-Jun-2024 16:57:47.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+06-Jun-2024 16:57:47.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 16:57:47.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 16:57:47.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Jun-2024 16:57:47.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Jun-2024 16:57:47.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Jun-2024 16:57:47.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Jun-2024 16:57:47.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Jun-2024 16:57:47.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 16:57:47.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 16:57:47.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\time\temp
+06-Jun-2024 16:57:47.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\logging.properties
+06-Jun-2024 16:57:47.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jun-2024 16:57:47.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\33149\scoop\apps\idea\current\IDE\lib\idea_rt.jar=51288:C:\Users\33149\scoop\apps\idea\current\IDE\bin
+06-Jun-2024 16:57:47.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+06-Jun-2024 16:57:47.224 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\33149\scoop\apps\miniconda3\current;C:\Users\33149\scoop\apps\miniconda3\current\Library\mingw-w64\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\usr\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\miniconda3\current\Scripts;C:\Users\33149\scoop\apps\miniconda3\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\condabin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\dotnet;C:\Program Files\CMake\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\33149\scoop\apps\mingw-winlibs-llvm\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\scripts;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Users\33149\scoop\apps\gcc\current\bin;C:\Users\33149\scoop\apps\python\current\Scripts;C:\Users\33149\scoop\apps\python\current;C:\Users\33149\scoop\shims;C:\Users\33149\AppData\Local\Microsoft\WindowsApps;C:\Users\33149\AppData\Local\Quartus\modelsim_ase\win32aloem;C:\Users\33149\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2024.1.1\bin;.;.]
+06-Jun-2024 16:57:47.299 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 16:57:47.332 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 866 ms
+06-Jun-2024 16:57:47.399 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2024 16:57:47.400 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+06-Jun-2024 16:57:47.414 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml]
+06-Jun-2024 16:57:47.974 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml] has finished in [559] ms
+06-Jun-2024 16:57:47.978 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 16:57:48.051 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 719 ms
+06-Jun-2024 16:59:42.448 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 16:59:42.462 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Jun-2024 16:59:42.476 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 16:59:42.495 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:00:11.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+06-Jun-2024 17:00:11.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+06-Jun-2024 17:00:11.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+06-Jun-2024 17:00:11.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-Jun-2024 17:00:11.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-Jun-2024 17:00:11.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jun-2024 17:00:11.206 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+06-Jun-2024 17:00:11.207 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+06-Jun-2024 17:00:11.207 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+06-Jun-2024 17:00:11.208 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 17:00:11.208 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 17:00:11.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Jun-2024 17:00:11.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Jun-2024 17:00:11.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Jun-2024 17:00:11.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Jun-2024 17:00:11.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Jun-2024 17:00:11.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 17:00:11.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 17:00:11.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\time\temp
+06-Jun-2024 17:00:11.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\logging.properties
+06-Jun-2024 17:00:11.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jun-2024 17:00:11.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\33149\scoop\apps\idea\current\IDE\lib\idea_rt.jar=51412:C:\Users\33149\scoop\apps\idea\current\IDE\bin
+06-Jun-2024 17:00:11.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+06-Jun-2024 17:00:11.212 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\33149\scoop\apps\miniconda3\current;C:\Users\33149\scoop\apps\miniconda3\current\Library\mingw-w64\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\usr\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\miniconda3\current\Scripts;C:\Users\33149\scoop\apps\miniconda3\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\condabin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\dotnet;C:\Program Files\CMake\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\33149\scoop\apps\mingw-winlibs-llvm\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\scripts;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Users\33149\scoop\apps\gcc\current\bin;C:\Users\33149\scoop\apps\python\current\Scripts;C:\Users\33149\scoop\apps\python\current;C:\Users\33149\scoop\shims;C:\Users\33149\AppData\Local\Microsoft\WindowsApps;C:\Users\33149\AppData\Local\Quartus\modelsim_ase\win32aloem;C:\Users\33149\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2024.1.1\bin;.;.]
+06-Jun-2024 17:00:11.291 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:00:11.327 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1212 ms
+06-Jun-2024 17:00:11.405 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2024 17:00:11.405 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+06-Jun-2024 17:00:11.426 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml]
+06-Jun-2024 17:00:12.006 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml] has finished in [580] ms
+06-Jun-2024 17:00:12.011 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:00:12.134 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 806 ms
+06-Jun-2024 17:02:22.133 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\time\webapps\app]
+06-Jun-2024 17:02:22.195 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\time\webapps\app] has finished in [63] ms
+06-Jun-2024 17:02:44.932 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:02:44.946 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Jun-2024 17:02:44.961 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:02:44.986 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:02:49.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+06-Jun-2024 17:02:49.494 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+06-Jun-2024 17:02:49.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+06-Jun-2024 17:02:49.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-Jun-2024 17:02:49.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-Jun-2024 17:02:49.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jun-2024 17:02:49.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+06-Jun-2024 17:02:49.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+06-Jun-2024 17:02:49.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+06-Jun-2024 17:02:49.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 17:02:49.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 17:02:49.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Jun-2024 17:02:49.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Jun-2024 17:02:49.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Jun-2024 17:02:49.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Jun-2024 17:02:49.501 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Jun-2024 17:02:49.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 17:02:49.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 17:02:49.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\time\temp
+06-Jun-2024 17:02:49.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\logging.properties
+06-Jun-2024 17:02:49.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jun-2024 17:02:49.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\33149\scoop\apps\idea\current\IDE\lib\idea_rt.jar=51584:C:\Users\33149\scoop\apps\idea\current\IDE\bin
+06-Jun-2024 17:02:49.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+06-Jun-2024 17:02:49.503 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\33149\scoop\apps\miniconda3\current;C:\Users\33149\scoop\apps\miniconda3\current\Library\mingw-w64\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\usr\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\miniconda3\current\Scripts;C:\Users\33149\scoop\apps\miniconda3\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\condabin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\dotnet;C:\Program Files\CMake\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\33149\scoop\apps\mingw-winlibs-llvm\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\scripts;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Users\33149\scoop\apps\gcc\current\bin;C:\Users\33149\scoop\apps\python\current\Scripts;C:\Users\33149\scoop\apps\python\current;C:\Users\33149\scoop\shims;C:\Users\33149\AppData\Local\Microsoft\WindowsApps;C:\Users\33149\AppData\Local\Quartus\modelsim_ase\win32aloem;C:\Users\33149\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2024.1.1\bin;.;.]
+06-Jun-2024 17:02:49.599 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:02:49.641 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 951 ms
+06-Jun-2024 17:02:49.752 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2024 17:02:49.754 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+06-Jun-2024 17:02:49.835 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml]
+06-Jun-2024 17:02:50.420 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml] has finished in [584] ms
+06-Jun-2024 17:02:50.423 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\time\webapps\app]
+06-Jun-2024 17:02:50.477 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\time\webapps\app] has finished in [55] ms
+06-Jun-2024 17:02:50.480 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:02:50.551 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 910 ms
+06-Jun-2024 17:07:51.558 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:07:51.578 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Jun-2024 17:07:51.614 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:07:51.620 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:27:50.093 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+06-Jun-2024 17:27:50.098 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+06-Jun-2024 17:27:50.099 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+06-Jun-2024 17:27:50.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-Jun-2024 17:27:50.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-Jun-2024 17:27:50.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jun-2024 17:27:50.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+06-Jun-2024 17:27:50.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+06-Jun-2024 17:27:50.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+06-Jun-2024 17:27:50.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 17:27:50.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 17:27:50.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Jun-2024 17:27:50.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Jun-2024 17:27:50.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Jun-2024 17:27:50.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Jun-2024 17:27:50.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Jun-2024 17:27:50.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 17:27:50.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 17:27:50.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\time\temp
+06-Jun-2024 17:27:50.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\logging.properties
+06-Jun-2024 17:27:50.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jun-2024 17:27:50.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\33149\scoop\apps\idea\current\IDE\lib\idea_rt.jar=52559:C:\Users\33149\scoop\apps\idea\current\IDE\bin
+06-Jun-2024 17:27:50.104 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+06-Jun-2024 17:27:50.104 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\33149\scoop\apps\miniconda3\current;C:\Users\33149\scoop\apps\miniconda3\current\Library\mingw-w64\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\usr\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\miniconda3\current\Scripts;C:\Users\33149\scoop\apps\miniconda3\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\condabin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\dotnet;C:\Program Files\CMake\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\33149\scoop\apps\mingw-winlibs-llvm\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\scripts;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Users\33149\scoop\apps\gcc\current\bin;C:\Users\33149\scoop\apps\python\current\Scripts;C:\Users\33149\scoop\apps\python\current;C:\Users\33149\scoop\shims;C:\Users\33149\AppData\Local\Microsoft\WindowsApps;C:\Users\33149\AppData\Local\Quartus\modelsim_ase\win32aloem;C:\Users\33149\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2024.1.1\bin;.;.]
+06-Jun-2024 17:27:50.196 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:27:50.246 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 969 ms
+06-Jun-2024 17:27:50.326 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2024 17:27:50.326 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+06-Jun-2024 17:27:50.357 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml]
+06-Jun-2024 17:27:50.964 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml] has finished in [606] ms
+06-Jun-2024 17:27:50.969 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:27:51.065 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 818 ms
+06-Jun-2024 17:28:59.697 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:28:59.713 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Jun-2024 17:28:59.732 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:28:59.741 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:29:03.404 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+06-Jun-2024 17:29:03.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+06-Jun-2024 17:29:03.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+06-Jun-2024 17:29:03.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-Jun-2024 17:29:03.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-Jun-2024 17:29:03.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jun-2024 17:29:03.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+06-Jun-2024 17:29:03.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+06-Jun-2024 17:29:03.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+06-Jun-2024 17:29:03.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 17:29:03.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 17:29:03.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Jun-2024 17:29:03.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Jun-2024 17:29:03.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Jun-2024 17:29:03.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Jun-2024 17:29:03.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Jun-2024 17:29:03.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 17:29:03.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 17:29:03.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\time\temp
+06-Jun-2024 17:29:03.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\logging.properties
+06-Jun-2024 17:29:03.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jun-2024 17:29:03.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\33149\scoop\apps\idea\current\IDE\lib\idea_rt.jar=52609:C:\Users\33149\scoop\apps\idea\current\IDE\bin
+06-Jun-2024 17:29:03.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+06-Jun-2024 17:29:03.415 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\33149\scoop\apps\miniconda3\current;C:\Users\33149\scoop\apps\miniconda3\current\Library\mingw-w64\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\usr\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\miniconda3\current\Scripts;C:\Users\33149\scoop\apps\miniconda3\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\condabin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\dotnet;C:\Program Files\CMake\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\33149\scoop\apps\mingw-winlibs-llvm\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\scripts;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Users\33149\scoop\apps\gcc\current\bin;C:\Users\33149\scoop\apps\python\current\Scripts;C:\Users\33149\scoop\apps\python\current;C:\Users\33149\scoop\shims;C:\Users\33149\AppData\Local\Microsoft\WindowsApps;C:\Users\33149\AppData\Local\Quartus\modelsim_ase\win32aloem;C:\Users\33149\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2024.1.1\bin;.;.]
+06-Jun-2024 17:29:03.489 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:29:03.519 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 853 ms
+06-Jun-2024 17:29:03.585 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2024 17:29:03.585 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+06-Jun-2024 17:29:03.609 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml]
+06-Jun-2024 17:29:04.177 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml] has finished in [567] ms
+06-Jun-2024 17:29:04.181 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:29:04.279 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 759 ms
+06-Jun-2024 17:29:34.223 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\time\webapps\app]
+06-Jun-2024 17:29:34.311 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\time\webapps\app] has finished in [88] ms
+06-Jun-2024 17:29:37.120 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:29:37.134 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Jun-2024 17:29:37.147 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:29:37.162 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:29:41.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+06-Jun-2024 17:29:41.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+06-Jun-2024 17:29:41.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+06-Jun-2024 17:29:41.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-Jun-2024 17:29:41.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-Jun-2024 17:29:41.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jun-2024 17:29:41.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+06-Jun-2024 17:29:41.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+06-Jun-2024 17:29:41.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+06-Jun-2024 17:29:41.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 17:29:41.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 17:29:41.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Jun-2024 17:29:41.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Jun-2024 17:29:41.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Jun-2024 17:29:41.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Jun-2024 17:29:41.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Jun-2024 17:29:41.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 17:29:41.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 17:29:41.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\time\temp
+06-Jun-2024 17:29:41.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\logging.properties
+06-Jun-2024 17:29:41.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jun-2024 17:29:41.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\33149\scoop\apps\idea\current\IDE\lib\idea_rt.jar=52616:C:\Users\33149\scoop\apps\idea\current\IDE\bin
+06-Jun-2024 17:29:41.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+06-Jun-2024 17:29:41.078 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\33149\scoop\apps\miniconda3\current;C:\Users\33149\scoop\apps\miniconda3\current\Library\mingw-w64\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\usr\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\miniconda3\current\Scripts;C:\Users\33149\scoop\apps\miniconda3\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\condabin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\dotnet;C:\Program Files\CMake\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\33149\scoop\apps\mingw-winlibs-llvm\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\scripts;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Users\33149\scoop\apps\gcc\current\bin;C:\Users\33149\scoop\apps\python\current\Scripts;C:\Users\33149\scoop\apps\python\current;C:\Users\33149\scoop\shims;C:\Users\33149\AppData\Local\Microsoft\WindowsApps;C:\Users\33149\AppData\Local\Quartus\modelsim_ase\win32aloem;C:\Users\33149\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2024.1.1\bin;.;.]
+06-Jun-2024 17:29:41.170 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:29:41.211 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 954 ms
+06-Jun-2024 17:29:41.289 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2024 17:29:41.290 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+06-Jun-2024 17:29:41.327 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml]
+06-Jun-2024 17:29:41.987 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml] has finished in [660] ms
+06-Jun-2024 17:29:41.989 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\time\webapps\app]
+06-Jun-2024 17:29:42.043 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\time\webapps\app] has finished in [54] ms
+06-Jun-2024 17:29:42.046 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:29:42.270 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1057 ms
+06-Jun-2024 17:30:10.630 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:30:10.647 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Jun-2024 17:30:10.678 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:30:10.697 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:32:23.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+06-Jun-2024 17:32:23.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+06-Jun-2024 17:32:23.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+06-Jun-2024 17:32:23.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-Jun-2024 17:32:23.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-Jun-2024 17:32:23.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jun-2024 17:32:23.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+06-Jun-2024 17:32:23.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+06-Jun-2024 17:32:23.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+06-Jun-2024 17:32:23.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 17:32:23.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 17:32:23.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Jun-2024 17:32:23.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Jun-2024 17:32:23.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Jun-2024 17:32:23.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Jun-2024 17:32:23.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Jun-2024 17:32:23.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 17:32:23.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 17:32:23.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\time\temp
+06-Jun-2024 17:32:23.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\logging.properties
+06-Jun-2024 17:32:23.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jun-2024 17:32:23.481 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\33149\scoop\apps\idea\current\IDE\lib\idea_rt.jar=52646:C:\Users\33149\scoop\apps\idea\current\IDE\bin
+06-Jun-2024 17:32:23.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+06-Jun-2024 17:32:23.482 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\33149\scoop\apps\miniconda3\current;C:\Users\33149\scoop\apps\miniconda3\current\Library\mingw-w64\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\usr\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\miniconda3\current\Scripts;C:\Users\33149\scoop\apps\miniconda3\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\condabin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\dotnet;C:\Program Files\CMake\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\33149\scoop\apps\mingw-winlibs-llvm\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\scripts;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Users\33149\scoop\apps\gcc\current\bin;C:\Users\33149\scoop\apps\python\current\Scripts;C:\Users\33149\scoop\apps\python\current;C:\Users\33149\scoop\shims;C:\Users\33149\AppData\Local\Microsoft\WindowsApps;C:\Users\33149\AppData\Local\Quartus\modelsim_ase\win32aloem;C:\Users\33149\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2024.1.1\bin;.;.]
+06-Jun-2024 17:32:23.585 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:32:23.626 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 959 ms
+06-Jun-2024 17:32:23.713 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2024 17:32:23.714 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+06-Jun-2024 17:32:23.748 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml]
+06-Jun-2024 17:32:23.841 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@790ab536]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\33149\Desktop\Java2024\2024.6.5\time\deployment] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:720)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:678)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 13 more
+06-Jun-2024 17:32:23.842 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@790ab536]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		... 9 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\33149\Desktop\Java2024\2024.6.5\time\deployment] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:720)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:678)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 13 more
+06-Jun-2024 17:32:23.844 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml] has finished in [96] ms
+06-Jun-2024 17:32:23.846 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\time\webapps\app]
+06-Jun-2024 17:32:24.460 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\33149\Desktop\Java2024\2024.6.5\time\webapps\app] has finished in [613] ms
+06-Jun-2024 17:32:24.465 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:32:24.579 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 953 ms
+06-Jun-2024 17:33:53.946 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:33:53.966 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Jun-2024 17:33:53.989 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:33:53.999 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:33:54.001 SEVERE [Thread-1] org.apache.catalina.core.StandardContext.resourcesStop Error stopping static Resources
+	org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_stop]) for component [org.apache.catalina.webresources.DirResourceSet@606078f6] in state [INITIALIZED]
+		at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:409)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:229)
+		at org.apache.catalina.webresources.StandardRoot.stopInternal(StandardRoot.java:731)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+		at org.apache.catalina.core.StandardContext.resourcesStop(StandardContext.java:4580)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5171)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:278)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:807)
+		at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:988)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:807)
+		at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:988)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:599)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:871)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.startup.Catalina.stop(Catalina.java:716)
+		at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:810)
+06-Jun-2024 17:33:54.001 SEVERE [Thread-1] org.apache.catalina.util.LifecycleBase.destroy Called stop() on failed component [org.apache.catalina.webresources.StandardRoot@790ab536] to trigger clean-up but it failed too
+	org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_stop]) for component [org.apache.catalina.webresources.DirResourceSet@606078f6] in state [INITIALIZED]
+		at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:409)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:229)
+		at org.apache.catalina.webresources.StandardRoot.stopInternal(StandardRoot.java:731)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:278)
+		at org.apache.catalina.core.StandardContext.destroyInternal(StandardContext.java:5239)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:807)
+		at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:988)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:807)
+		at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:988)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:599)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:871)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.startup.Catalina.stop(Catalina.java:716)
+		at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:810)
+06-Jun-2024 17:40:35.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.100
+06-Jun-2024 17:40:35.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 19 2024 13:54:42 UTC
+06-Jun-2024 17:40:35.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.100.0
+06-Jun-2024 17:40:35.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+06-Jun-2024 17:40:35.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+06-Jun-2024 17:40:35.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Jun-2024 17:40:35.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\33149\scoop\apps\microsoft17-jdk\current
+06-Jun-2024 17:40:35.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.9+8-LTS
+06-Jun-2024 17:40:35.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+06-Jun-2024 17:40:35.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 17:40:35.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 17:40:35.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Jun-2024 17:40:35.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+06-Jun-2024 17:40:35.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+06-Jun-2024 17:40:35.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Jun-2024 17:40:35.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Jun-2024 17:40:35.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\33149\Desktop\Java2024\2024.6.5\apache-tomcat-8.5.100
+06-Jun-2024 17:40:35.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\33149\Desktop\Java2024\2024.6.5\time
+06-Jun-2024 17:40:35.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\33149\Desktop\Java2024\2024.6.5\time\temp
+06-Jun-2024 17:40:35.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\logging.properties
+06-Jun-2024 17:40:35.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Jun-2024 17:40:35.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Users\33149\scoop\apps\idea\current\IDE\lib\idea_rt.jar=53495:C:\Users\33149\scoop\apps\idea\current\IDE\bin
+06-Jun-2024 17:40:35.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+06-Jun-2024 17:40:35.705 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\33149\scoop\apps\miniconda3\current;C:\Users\33149\scoop\apps\miniconda3\current\Library\mingw-w64\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\usr\bin;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\miniconda3\current\Scripts;C:\Users\33149\scoop\apps\miniconda3\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\condabin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\dotnet;C:\Program Files\CMake\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\33149\scoop\apps\mingw-winlibs-llvm\current\bin;C:\Users\33149\scoop\apps\miniconda3\current\scripts;C:\Users\33149\scoop\apps\miniconda3\current\Library\bin;C:\Users\33149\scoop\apps\microsoft17-jdk\current\bin;C:\Users\33149\scoop\apps\gcc\current\bin;C:\Users\33149\scoop\apps\python\current\Scripts;C:\Users\33149\scoop\apps\python\current;C:\Users\33149\scoop\shims;C:\Users\33149\AppData\Local\Microsoft\WindowsApps;C:\Users\33149\AppData\Local\Quartus\modelsim_ase\win32aloem;C:\Users\33149\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\CLion 2024.1.1\bin;.;.]
+06-Jun-2024 17:40:35.787 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:40:35.828 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 929 ms
+06-Jun-2024 17:40:35.934 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Jun-2024 17:40:35.934 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/8.5.100]
+06-Jun-2024 17:40:35.975 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml]
+06-Jun-2024 17:40:36.070 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@790ab536]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\33149\Desktop\Java2024\2024.6.5\time\deployment] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:720)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:678)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 13 more
+06-Jun-2024 17:40:36.071 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:687)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:660)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:681)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1845)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@790ab536]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4554)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4692)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:710)
+		... 9 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\33149\Desktop\Java2024\2024.6.5\time\deployment] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:720)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:678)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 13 more
+06-Jun-2024 17:40:36.074 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\33149\Desktop\Java2024\2024.6.5\time\conf\Catalina\localhost\time.xml] has finished in [98] ms
+06-Jun-2024 17:40:36.078 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:40:36.304 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 475 ms
+06-Jun-2024 17:40:53.660 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:40:53.679 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Jun-2024 17:40:53.683 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:40:53.689 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+06-Jun-2024 17:40:53.691 SEVERE [Thread-1] org.apache.catalina.core.StandardContext.resourcesStop Error stopping static Resources
+	org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_stop]) for component [org.apache.catalina.webresources.DirResourceSet@40bb399c] in state [INITIALIZED]
+		at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:409)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:229)
+		at org.apache.catalina.webresources.StandardRoot.stopInternal(StandardRoot.java:731)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+		at org.apache.catalina.core.StandardContext.resourcesStop(StandardContext.java:4580)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5171)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:278)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:807)
+		at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:988)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:807)
+		at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:988)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:599)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:871)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.startup.Catalina.stop(Catalina.java:716)
+		at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:810)
+06-Jun-2024 17:40:53.693 SEVERE [Thread-1] org.apache.catalina.util.LifecycleBase.destroy Called stop() on failed component [org.apache.catalina.webresources.StandardRoot@790ab536] to trigger clean-up but it failed too
+	org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_stop]) for component [org.apache.catalina.webresources.DirResourceSet@40bb399c] in state [INITIALIZED]
+		at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:409)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:229)
+		at org.apache.catalina.webresources.StandardRoot.stopInternal(StandardRoot.java:731)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:278)
+		at org.apache.catalina.core.StandardContext.destroyInternal(StandardContext.java:5239)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:807)
+		at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:988)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:807)
+		at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:988)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:599)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:871)
+		at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:306)
+		at org.apache.catalina.startup.Catalina.stop(Catalina.java:716)
+		at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:810)

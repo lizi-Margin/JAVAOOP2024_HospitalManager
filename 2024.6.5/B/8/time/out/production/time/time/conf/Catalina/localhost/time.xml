@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context docBase="C:\Users\33149\Desktop\Java2024\2024.6.5\time\deployment">
+  <Resources cacheMaxSize="10240">
+    <PreResources base="C:/Users/33149/Desktop/Java2024/2024.6.5/time/out/production/time" className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/classes"/>
+  </Resources>
+</Context>
